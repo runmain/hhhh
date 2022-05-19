@@ -5,1106 +5,149 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: YouTube梦歌|Netflix_1, server: hk-v.sserver.top, port: 80, type: vmess, uuid: 8d0ceab5-1008-300f-996f-0751e11038f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: hk-v.sserver.top}}, udp: true}
-  - {name: YouTube梦歌|Netflix_2, server: ct.mj-cn.cyou, port: 16617, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ct.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_3, server: ty2-3.nigirocloud.com, port: 443, type: trojan, password: ruWkGdbUKT4RN7kZ8t, sni: ty2-3.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_4, server: cu.mj-cn.cyou, port: 16633, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_5, server: cu.mj-cn.cyou, port: 16631, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_6, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_7, server: cm.mj-cn.cyou, port: 16631, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_8, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_9, server: cu.mj-cn.cyou, port: 16619, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_10, server: gtm.mj-cn.cyou, port: 16619, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gtm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_11, server: gtm.mj-cn.cyou, port: 16617, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gtm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_12, server: cm.mj-cn.cyou, port: 26622, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_13, server: cm.mj-cn.cyou, port: 16619, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_14, server: cu.mj-cn.cyou, port: 16621, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_15, server: cu.mj-cn.cyou, port: 16617, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_16, server: cu.mj-cn.cyou, port: 16634, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_17, server: v2-3.godlight.xyz, port: 26944, type: vmess, uuid: 6a52f259-4367-468c-a828-7b8283c2f059, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /f45361465j175, headers: {Host: v2-3.godlight.xyz}}, udp: true}
-  - {name: YouTube梦歌|Netflix_18, server: cu.mj-cn.cyou, port: 26622, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_19, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_20, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_21, server: cm.mj-cn.cyou, port: 16621, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_22, server: cm.mj-cn.cyou, port: 16627, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_23, server: x-cc.gotout.work, port: 32431, type: vmess, uuid: 875bc8a1-ee14-350f-aa9e-bbbd1eaf8758, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_24, server: x-cm.gotout.work, port: 31925, type: vmess, uuid: 875bc8a1-ee14-350f-aa9e-bbbd1eaf8758, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_25, server: cu.mj-cn.cyou, port: 16627, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_26, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_27, server: ty2-7.nigirocloud.com, port: 443, type: trojan, password: ruWkGdbUKT4RN7kZ8t, sni: ty2-7.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_28, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_29, server: cm.mj-cn.cyou, port: 16617, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_30, server: cu.mj-cn.cyou, port: 16632, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_31, server: cu.mj-cn.cyou, port: 16618, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_32, server: v2-1.godlight.xyz, port: 26944, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /j75g1461x, headers: {Host: v2-1.godlight.xyz}}, udp: true}
-  - {name: YouTube梦歌|Netflix_33, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_34, server: cu.mj-cn.cyou, port: 23383, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_35, server: gtm.mj-cn.cyou, port: 16618, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gtm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_36, server: cm.mj-cn.cyou, port: 16618, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_37, server: mplsgz1.ggbbba.xyz, port: 45787, type: ss, cipher: aes-256-gcm, password: gDQ8kr1HdHEK5DGU, udp: true}
-  - {name: YouTube梦歌|Netflix_38, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_39, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_40, server: cm.mj-cn.cyou, port: 23315, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_41, server: cm.mj-cn.cyou, port: 26633, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_42, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_43, server: cu.mj-cn.cyou, port: 16616, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_44, server: cu.mj-cn.cyou, port: 16636, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_45, server: cu.mj-cn.cyou, port: 23315, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_46, server: cu.mj-cn.cyou, port: 26633, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_47, server: 51us.fans8.xyz, port: 80, type: vmess, uuid: dc09c9a0-1697-3f39-8ba9-65f2985e00ec, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 51us.fans8.xyz}}, udp: true}
-  - {name: YouTube梦歌|Netflix_48, server: cm.mj-cn.cyou, port: 16634, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_49, server: cm.mj-cn.cyou, port: 16632, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_50, server: hk-b.sserver.top, port: 80, type: vmess, uuid: 8d0ceab5-1008-300f-996f-0751e11038f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: hk-b.sserver.top}}, udp: true}
-  - {name: YouTube梦歌|Netflix_51, server: cm.mj-cn.cyou, port: 23383, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_52, server: 51us.fans8.xyz, port: 80, type: vmess, uuid: dc09c9a0-1697-3f39-8ba9-65f2985e00ec, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 51us.fans8.xyz}}, udp: true}
-  - {name: YouTube梦歌|Netflix_53, server: v2-5.godlight.xyz, port: 26944, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /71h4b3s1f53, headers: {Host: v2-5.godlight.xyz}}, udp: true}
-  - {name: YouTube梦歌|Netflix_54, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}, udp: true}
-  - {name: YouTube梦歌|Netflix_55, server: cm.mj-cn.cyou, port: 23309, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_56, server: sg.sserver.top, port: 80, type: vmess, uuid: 8d0ceab5-1008-300f-996f-0751e11038f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-sg, headers: {Host: sg.sserver.top}}, udp: true}
-  - {name: YouTube梦歌|Netflix_57, server: gtm.mj-cn.cyou, port: 16626, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gtm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_58, server: jp02-vm0.entry.ikuuu.casa, port: 444, type: vmess, uuid: 43d063e0-9dcd-3ce5-af04-fde927895187, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp02-vm0.entry.ikuuu.casa}}, udp: true}
-  - {name: YouTube梦歌|Netflix_59, server: ddns1.pdjc.cc, port: 42000, type: ss, cipher: chacha20-ietf-poly1305, password: 09133b7b-2cbe-4e50-8215-1f644287d965, udp: true}
-  - {name: YouTube梦歌|Netflix_60, server: x-cm.gotout.work, port: 31621, type: vmess, uuid: 875bc8a1-ee14-350f-aa9e-bbbd1eaf8758, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_61, server: ip.2046.gq, port: 8443, type: vmess, uuid: bd9064a7-3c1d-4ec6-9e33-53c10c28ff59, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kk2.2046.gq}}, udp: true}
-  - {name: YouTube梦歌|Netflix_62, server: hk-ii.sserver.top, port: 80, type: vmess, uuid: 8d0ceab5-1008-300f-996f-0751e11038f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: hk-ii.sserver.top}}, udp: true}
-  - {name: YouTube梦歌|Netflix_63, server: sg.sserver.top, port: 80, type: vmess, uuid: 8d0ceab5-1008-300f-996f-0751e11038f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-sg, headers: {Host: sg.sserver.top}}, udp: true}
-  - {name: YouTube梦歌|Netflix_64, server: hk-vi.sserver.top, port: 80, type: vmess, uuid: 8d0ceab5-1008-300f-996f-0751e11038f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: gw.alicdn.com}}, udp: true}
-  - {name: YouTube梦歌|Netflix_65, server: sn.2046.gq, port: 4443, type: trojan, password: bd9064a7-3c1d-4ec6-9e33-53c10c28ff59, sni: sn.2046.gq, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_66, server: cm.mj-cn.cyou, port: 16636, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_67, server: us.sserver.top, port: 80, type: vmess, uuid: 8d0ceab5-1008-300f-996f-0751e11038f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-us, headers: {Host: us.sserver.top}}, udp: true}
-  - {name: YouTube梦歌|Netflix_68, server: x-cm.gotout.work, port: 31521, type: vmess, uuid: 875bc8a1-ee14-350f-aa9e-bbbd1eaf8758, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_69, server: hg.053111.xyz, port: 443, type: trojan, password: d4435b69-3d08-d58a-919f-7f1707150ecb, sni: hg.053111.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_70, server: v2-4.godlight.xyz, port: 26944, type: vmess, uuid: 07ea283e-bbe8-466f-a268-c5819763a9bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /g1641hvx, headers: {Host: v2-4.godlight.xyz}}, udp: true}
-  - {name: YouTube梦歌|Netflix_71, server: 51us.fans8.xyz, port: 80, type: vmess, uuid: dc09c9a0-1697-3f39-8ba9-65f2985e00ec, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 51us.fans8.xyz}}, udp: true}
-  - {name: YouTube梦歌|Netflix_72, server: gtm.mj-cn.cyou, port: 16616, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gtm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_73, server: cu.mj-cn.cyou, port: 16635, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_74, server: ct.mj-cn.cyou, port: 26633, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ct.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_75, server: ct.mj-cn.cyou, port: 23383, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ct.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_76, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_77, server: ct.mj-cn.cyou, port: 16619, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ct.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_78, server: s2.mine.com.cn, port: 3333, type: vmess, uuid: 3ba07dae-a511-4ef6-b3ec-cd174a863866, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_79, server: ddns1.pdjc.cc, port: 42000, type: ss, cipher: chacha20-ietf-poly1305, password: 151dada5-c12e-4eb3-940e-d93f365f8a4a, udp: true}
-  - {name: YouTube梦歌|Netflix_80, server: ty2-8.nigirocloud.com, port: 443, type: trojan, password: ruWkGdbUKT4RN7kZ8t, sni: ty2-8.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_81, server: hk-v.sserver.top, port: 80, type: vmess, uuid: 8d0ceab5-1008-300f-996f-0751e11038f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: hk-v.sserver.top}}, udp: true}
-  - {name: YouTube梦歌|Netflix_82, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_83, server: ct.mj-cn.cyou, port: 16632, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ct.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_84, server: cu.mj-cn.cyou, port: 16628, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_85, server: ct.mj-cn.cyou, port: 23315, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ct.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_86, server: jp06-vm0.entry.ikuuu.casa, port: 444, type: vmess, uuid: 43d063e0-9dcd-3ce5-af04-fde927895187, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp06-vm0.entry.ikuuu.casa}}, udp: true}
-  - {name: YouTube梦歌|Netflix_87, server: jp04-vm0.entry.ikuuu.casa, port: 444, type: vmess, uuid: 43d063e0-9dcd-3ce5-af04-fde927895187, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: bf419d5f59f7d0.windowsupdate.com}}, udp: true}
-  - {name: YouTube梦歌|Netflix_88, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_89, server: jp.sserver.top, port: 80, type: vmess, uuid: 8d0ceab5-1008-300f-996f-0751e11038f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-jp, headers: {Host: jp.sserver.top}}, udp: true}
-  - {name: YouTube梦歌|Netflix_90, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 3ba07dae-a511-4ef6-b3ec-cd174a863866, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_91, server: us.sserver.top, port: 80, type: vmess, uuid: 8d0ceab5-1008-300f-996f-0751e11038f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-us, headers: {Host: us.sserver.top}}, udp: true}
-  - {name: YouTube梦歌|Netflix_92, server: cu.mj-cn.cyou, port: 16626, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_93, server: cm.mj-cn.cyou, port: 16616, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_94, server: cm.mj-cn.cyou, port: 26623, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_95, server: ct.mj-cn.cyou, port: 16631, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ct.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_96, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_97, server: jp.2046.gq, port: 4443, type: trojan, password: bd9064a7-3c1d-4ec6-9e33-53c10c28ff59, sni: jp.2046.gq, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_98, server: cu.mj-cn.cyou, port: 26623, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_99, server: hk-iii.sserver.top, port: 80, type: vmess, uuid: 8d0ceab5-1008-300f-996f-0751e11038f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: hk-iii.sserver.top}}, udp: true}
-  - {name: YouTube梦歌|Netflix_100, server: jp03-vm0.entry.ikuuu.casa, port: 444, type: vmess, uuid: 43d063e0-9dcd-3ce5-af04-fde927895187, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp03-vm0.entry.ikuuu.casa}}, udp: true}
-  - {name: YouTube梦歌|Netflix_101, server: ct.mj-cn.cyou, port: 16628, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ct.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_102, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}, udp: true}
-  - {name: YouTube梦歌|Netflix_103, server: ct.mj-cn.cyou, port: 16618, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ct.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_104, server: cu.mj-cn.cyou, port: 23309, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_105, server: ct.mj-cn.cyou, port: 16627, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ct.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_106, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_107, server: ct.mj-cn.cyou, port: 16633, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ct.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_108, server: cm.mj-cn.cyou, port: 26623, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_109, server: ct.mj-cn.cyou, port: 16621, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ct.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_110, server: jp3.2046.gq, port: 8443, type: vmess, uuid: bd9064a7-3c1d-4ec6-9e33-53c10c28ff59, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp3.2046.gq}}, udp: true}
-  - {name: YouTube梦歌|Netflix_111, server: ct.mj-cn.cyou, port: 16616, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ct.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_112, server: jp01-tls-vm0.entry.ikuuu.casa, port: 889, type: vmess, uuid: 43d063e0-9dcd-3ce5-af04-fde927895187, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp01-tls-vm0.entry.vm-pass.org}}, udp: true}
-  - {name: YouTube梦歌|Netflix_113, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_114, server: hk-c.sserver.top, port: 80, type: vmess, uuid: 8d0ceab5-1008-300f-996f-0751e11038f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: hk-c.sserver.top}}, udp: true}
-  - {name: YouTube梦歌|Netflix_115, server: ct.mj-cn.cyou, port: 23309, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ct.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_116, server: cu.mj-cn.cyou, port: 16625, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_117, server: ct.mj-cn.cyou, port: 16635, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ct.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_118, server: ddns1.pdjc.cc, port: 42000, type: ss, cipher: chacha20-ietf-poly1305, password: 151dada5-c12e-4eb3-940e-d93f365f8a4a, udp: true}
-  - {name: YouTube梦歌|Netflix_119, server: ct.mj-cn.cyou, port: 16636, type: vmess, uuid: 061739b7-0622-47ea-9c2f-589223e2c367, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ct.mj-cn.cyou}}, udp: true}
-  - {name: YouTube梦歌|Netflix_120, server: ss2.2046.gq, port: 4443, type: trojan, password: bd9064a7-3c1d-4ec6-9e33-53c10c28ff59, sni: ss2.2046.gq, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_121, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_122, server: jp05-vm0.entry.ikuuu.casa, port: 444, type: vmess, uuid: 43d063e0-9dcd-3ce5-af04-fde927895187, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp05-tls-vm0.entry.vm-pass.org}}, udp: true}
-  - {name: YouTube梦歌|Netflix_123, server: jp.sserver.top, port: 80, type: vmess, uuid: 8d0ceab5-1008-300f-996f-0751e11038f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-jp, headers: {Host: jp.sserver.top}}, udp: true}
-  - {name: YouTube梦歌|Netflix_124, server: ss.2046.gq, port: 4443, type: trojan, password: bd9064a7-3c1d-4ec6-9e33-53c10c28ff59, sni: ss.2046.gq, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_125, server: w2.v2mmy.xyz, port: 44819, type: ss, cipher: aes-128-gcm, password: fcae85b5-baf0-4c5a-ba80-5f513e70512a, udp: true}
-  - {name: YouTube梦歌|Netflix_126, server: ddns1.pdjc.cc, port: 42000, type: ss, cipher: chacha20-ietf-poly1305, password: 151dada5-c12e-4eb3-940e-d93f365f8a4a, udp: true}
-  - {name: YouTube梦歌|Netflix_127, server: w6.v2mmy.xyz, port: 25600, type: ss, cipher: aes-128-gcm, password: fcae85b5-baf0-4c5a-ba80-5f513e70512a, udp: true}
-  - {name: YouTube梦歌|Netflix_128, server: w6.v2mmy.xyz, port: 25600, type: ss, cipher: aes-128-gcm, password: fcae85b5-baf0-4c5a-ba80-5f513e70512a, udp: true}
-  - {name: YouTube梦歌|Netflix_129, server: w3.v2mmy.xyz, port: 44816, type: ss, cipher: aes-128-gcm, password: fcae85b5-baf0-4c5a-ba80-5f513e70512a, udp: true}
-  - {name: YouTube梦歌|Netflix_130, server: w6.v2mmy.xyz, port: 25600, type: ss, cipher: aes-128-gcm, password: fcae85b5-baf0-4c5a-ba80-5f513e70512a, udp: true}
-  - {name: YouTube梦歌|Netflix_131, server: w2.v2mmy.xyz, port: 44819, type: ss, cipher: aes-128-gcm, password: fcae85b5-baf0-4c5a-ba80-5f513e70512a, udp: true}
-  - {name: YouTube梦歌|Netflix_132, server: ss.2046.gq, port: 8443, type: vmess, uuid: bd9064a7-3c1d-4ec6-9e33-53c10c28ff59, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}, udp: true}
+  - {name: 🇸🇬 V0|新加坡|中转|01, server: 183.232.250.96, port: 37002, type: vmess, uuid: a650656a-2e7d-3d88-8f88-d6a96a985886, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 V0|香港|中转|01, server: 183.232.250.96, port: 37004, type: vmess, uuid: a650656a-2e7d-3d88-8f88-d6a96a985886, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 V01|日本|中转|01, server: 183.232.250.96, port: 37016, type: vmess, uuid: a650656a-2e7d-3d88-8f88-d6a96a985886, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
 proxy-groups:
-  - name: 🚀 节点选择
+  - name: 🚀 手动切换
     type: select
     proxies:
-      - ♻️ 自动选择
+      - 🇭🇰 香港
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - 🇸🇬 新加坡
+      - 🇹🇼 台湾
+      - 专线
       - DIRECT
-      - YouTube梦歌|Netflix_1
-      - YouTube梦歌|Netflix_2
-      - YouTube梦歌|Netflix_3
-      - YouTube梦歌|Netflix_4
-      - YouTube梦歌|Netflix_5
-      - YouTube梦歌|Netflix_6
-      - YouTube梦歌|Netflix_7
-      - YouTube梦歌|Netflix_8
-      - YouTube梦歌|Netflix_9
-      - YouTube梦歌|Netflix_10
-      - YouTube梦歌|Netflix_11
-      - YouTube梦歌|Netflix_12
-      - YouTube梦歌|Netflix_13
-      - YouTube梦歌|Netflix_14
-      - YouTube梦歌|Netflix_15
-      - YouTube梦歌|Netflix_16
-      - YouTube梦歌|Netflix_17
-      - YouTube梦歌|Netflix_18
-      - YouTube梦歌|Netflix_19
-      - YouTube梦歌|Netflix_20
-      - YouTube梦歌|Netflix_21
-      - YouTube梦歌|Netflix_22
-      - YouTube梦歌|Netflix_23
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_25
-      - YouTube梦歌|Netflix_26
-      - YouTube梦歌|Netflix_27
-      - YouTube梦歌|Netflix_28
-      - YouTube梦歌|Netflix_29
-      - YouTube梦歌|Netflix_30
-      - YouTube梦歌|Netflix_31
-      - YouTube梦歌|Netflix_32
-      - YouTube梦歌|Netflix_33
-      - YouTube梦歌|Netflix_34
-      - YouTube梦歌|Netflix_35
-      - YouTube梦歌|Netflix_36
-      - YouTube梦歌|Netflix_37
-      - YouTube梦歌|Netflix_38
-      - YouTube梦歌|Netflix_39
-      - YouTube梦歌|Netflix_40
-      - YouTube梦歌|Netflix_41
-      - YouTube梦歌|Netflix_42
-      - YouTube梦歌|Netflix_43
-      - YouTube梦歌|Netflix_44
-      - YouTube梦歌|Netflix_45
-      - YouTube梦歌|Netflix_46
-      - YouTube梦歌|Netflix_47
-      - YouTube梦歌|Netflix_48
-      - YouTube梦歌|Netflix_49
-      - YouTube梦歌|Netflix_50
-      - YouTube梦歌|Netflix_51
-      - YouTube梦歌|Netflix_52
-      - YouTube梦歌|Netflix_53
-      - YouTube梦歌|Netflix_54
-      - YouTube梦歌|Netflix_55
-      - YouTube梦歌|Netflix_56
-      - YouTube梦歌|Netflix_57
-      - YouTube梦歌|Netflix_58
-      - YouTube梦歌|Netflix_59
-      - YouTube梦歌|Netflix_60
-      - YouTube梦歌|Netflix_61
-      - YouTube梦歌|Netflix_62
-      - YouTube梦歌|Netflix_63
-      - YouTube梦歌|Netflix_64
-      - YouTube梦歌|Netflix_65
-      - YouTube梦歌|Netflix_66
-      - YouTube梦歌|Netflix_67
-      - YouTube梦歌|Netflix_68
-      - YouTube梦歌|Netflix_69
-      - YouTube梦歌|Netflix_70
-      - YouTube梦歌|Netflix_71
-      - YouTube梦歌|Netflix_72
-      - YouTube梦歌|Netflix_73
-      - YouTube梦歌|Netflix_74
-      - YouTube梦歌|Netflix_75
-      - YouTube梦歌|Netflix_76
-      - YouTube梦歌|Netflix_77
-      - YouTube梦歌|Netflix_78
-      - YouTube梦歌|Netflix_79
-      - YouTube梦歌|Netflix_80
-      - YouTube梦歌|Netflix_81
-      - YouTube梦歌|Netflix_82
-      - YouTube梦歌|Netflix_83
-      - YouTube梦歌|Netflix_84
-      - YouTube梦歌|Netflix_85
-      - YouTube梦歌|Netflix_86
-      - YouTube梦歌|Netflix_87
-      - YouTube梦歌|Netflix_88
-      - YouTube梦歌|Netflix_89
-      - YouTube梦歌|Netflix_90
-      - YouTube梦歌|Netflix_91
-      - YouTube梦歌|Netflix_92
-      - YouTube梦歌|Netflix_93
-      - YouTube梦歌|Netflix_94
-      - YouTube梦歌|Netflix_95
-      - YouTube梦歌|Netflix_96
-      - YouTube梦歌|Netflix_97
-      - YouTube梦歌|Netflix_98
-      - YouTube梦歌|Netflix_99
-      - YouTube梦歌|Netflix_100
-      - YouTube梦歌|Netflix_101
-      - YouTube梦歌|Netflix_102
-      - YouTube梦歌|Netflix_103
-      - YouTube梦歌|Netflix_104
-      - YouTube梦歌|Netflix_105
-      - YouTube梦歌|Netflix_106
-      - YouTube梦歌|Netflix_107
-      - YouTube梦歌|Netflix_108
-      - YouTube梦歌|Netflix_109
-      - YouTube梦歌|Netflix_110
-      - YouTube梦歌|Netflix_111
-      - YouTube梦歌|Netflix_112
-      - YouTube梦歌|Netflix_113
-      - YouTube梦歌|Netflix_114
-      - YouTube梦歌|Netflix_115
-      - YouTube梦歌|Netflix_116
-      - YouTube梦歌|Netflix_117
-      - YouTube梦歌|Netflix_118
-      - YouTube梦歌|Netflix_119
-      - YouTube梦歌|Netflix_120
-      - YouTube梦歌|Netflix_121
-      - YouTube梦歌|Netflix_122
-      - YouTube梦歌|Netflix_123
-      - YouTube梦歌|Netflix_124
-      - YouTube梦歌|Netflix_125
-      - YouTube梦歌|Netflix_126
-      - YouTube梦歌|Netflix_127
-      - YouTube梦歌|Netflix_128
-      - YouTube梦歌|Netflix_129
-      - YouTube梦歌|Netflix_130
-      - YouTube梦歌|Netflix_131
-      - YouTube梦歌|Netflix_132
-  - name: ♻️ 自动选择
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    proxies:
-      - YouTube梦歌|Netflix_1
-      - YouTube梦歌|Netflix_2
-      - YouTube梦歌|Netflix_3
-      - YouTube梦歌|Netflix_4
-      - YouTube梦歌|Netflix_5
-      - YouTube梦歌|Netflix_6
-      - YouTube梦歌|Netflix_7
-      - YouTube梦歌|Netflix_8
-      - YouTube梦歌|Netflix_9
-      - YouTube梦歌|Netflix_10
-      - YouTube梦歌|Netflix_11
-      - YouTube梦歌|Netflix_12
-      - YouTube梦歌|Netflix_13
-      - YouTube梦歌|Netflix_14
-      - YouTube梦歌|Netflix_15
-      - YouTube梦歌|Netflix_16
-      - YouTube梦歌|Netflix_17
-      - YouTube梦歌|Netflix_18
-      - YouTube梦歌|Netflix_19
-      - YouTube梦歌|Netflix_20
-      - YouTube梦歌|Netflix_21
-      - YouTube梦歌|Netflix_22
-      - YouTube梦歌|Netflix_23
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_25
-      - YouTube梦歌|Netflix_26
-      - YouTube梦歌|Netflix_27
-      - YouTube梦歌|Netflix_28
-      - YouTube梦歌|Netflix_29
-      - YouTube梦歌|Netflix_30
-      - YouTube梦歌|Netflix_31
-      - YouTube梦歌|Netflix_32
-      - YouTube梦歌|Netflix_33
-      - YouTube梦歌|Netflix_34
-      - YouTube梦歌|Netflix_35
-      - YouTube梦歌|Netflix_36
-      - YouTube梦歌|Netflix_37
-      - YouTube梦歌|Netflix_38
-      - YouTube梦歌|Netflix_39
-      - YouTube梦歌|Netflix_40
-      - YouTube梦歌|Netflix_41
-      - YouTube梦歌|Netflix_42
-      - YouTube梦歌|Netflix_43
-      - YouTube梦歌|Netflix_44
-      - YouTube梦歌|Netflix_45
-      - YouTube梦歌|Netflix_46
-      - YouTube梦歌|Netflix_47
-      - YouTube梦歌|Netflix_48
-      - YouTube梦歌|Netflix_49
-      - YouTube梦歌|Netflix_50
-      - YouTube梦歌|Netflix_51
-      - YouTube梦歌|Netflix_52
-      - YouTube梦歌|Netflix_53
-      - YouTube梦歌|Netflix_54
-      - YouTube梦歌|Netflix_55
-      - YouTube梦歌|Netflix_56
-      - YouTube梦歌|Netflix_57
-      - YouTube梦歌|Netflix_58
-      - YouTube梦歌|Netflix_59
-      - YouTube梦歌|Netflix_60
-      - YouTube梦歌|Netflix_61
-      - YouTube梦歌|Netflix_62
-      - YouTube梦歌|Netflix_63
-      - YouTube梦歌|Netflix_64
-      - YouTube梦歌|Netflix_65
-      - YouTube梦歌|Netflix_66
-      - YouTube梦歌|Netflix_67
-      - YouTube梦歌|Netflix_68
-      - YouTube梦歌|Netflix_69
-      - YouTube梦歌|Netflix_70
-      - YouTube梦歌|Netflix_71
-      - YouTube梦歌|Netflix_72
-      - YouTube梦歌|Netflix_73
-      - YouTube梦歌|Netflix_74
-      - YouTube梦歌|Netflix_75
-      - YouTube梦歌|Netflix_76
-      - YouTube梦歌|Netflix_77
-      - YouTube梦歌|Netflix_78
-      - YouTube梦歌|Netflix_79
-      - YouTube梦歌|Netflix_80
-      - YouTube梦歌|Netflix_81
-      - YouTube梦歌|Netflix_82
-      - YouTube梦歌|Netflix_83
-      - YouTube梦歌|Netflix_84
-      - YouTube梦歌|Netflix_85
-      - YouTube梦歌|Netflix_86
-      - YouTube梦歌|Netflix_87
-      - YouTube梦歌|Netflix_88
-      - YouTube梦歌|Netflix_89
-      - YouTube梦歌|Netflix_90
-      - YouTube梦歌|Netflix_91
-      - YouTube梦歌|Netflix_92
-      - YouTube梦歌|Netflix_93
-      - YouTube梦歌|Netflix_94
-      - YouTube梦歌|Netflix_95
-      - YouTube梦歌|Netflix_96
-      - YouTube梦歌|Netflix_97
-      - YouTube梦歌|Netflix_98
-      - YouTube梦歌|Netflix_99
-      - YouTube梦歌|Netflix_100
-      - YouTube梦歌|Netflix_101
-      - YouTube梦歌|Netflix_102
-      - YouTube梦歌|Netflix_103
-      - YouTube梦歌|Netflix_104
-      - YouTube梦歌|Netflix_105
-      - YouTube梦歌|Netflix_106
-      - YouTube梦歌|Netflix_107
-      - YouTube梦歌|Netflix_108
-      - YouTube梦歌|Netflix_109
-      - YouTube梦歌|Netflix_110
-      - YouTube梦歌|Netflix_111
-      - YouTube梦歌|Netflix_112
-      - YouTube梦歌|Netflix_113
-      - YouTube梦歌|Netflix_114
-      - YouTube梦歌|Netflix_115
-      - YouTube梦歌|Netflix_116
-      - YouTube梦歌|Netflix_117
-      - YouTube梦歌|Netflix_118
-      - YouTube梦歌|Netflix_119
-      - YouTube梦歌|Netflix_120
-      - YouTube梦歌|Netflix_121
-      - YouTube梦歌|Netflix_122
-      - YouTube梦歌|Netflix_123
-      - YouTube梦歌|Netflix_124
-      - YouTube梦歌|Netflix_125
-      - YouTube梦歌|Netflix_126
-      - YouTube梦歌|Netflix_127
-      - YouTube梦歌|Netflix_128
-      - YouTube梦歌|Netflix_129
-      - YouTube梦歌|Netflix_130
-      - YouTube梦歌|Netflix_131
-      - YouTube梦歌|Netflix_132
-  - name: 🌍 国外媒体
+      - 🇸🇬 V0|新加坡|中转|01
+      - 🇭🇰 V0|香港|中转|01
+      - 🇯🇵 V01|日本|中转|01
+  - name: 🇭🇰 香港
     type: select
     proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🎯 全球直连
-      - YouTube梦歌|Netflix_1
-      - YouTube梦歌|Netflix_2
-      - YouTube梦歌|Netflix_3
-      - YouTube梦歌|Netflix_4
-      - YouTube梦歌|Netflix_5
-      - YouTube梦歌|Netflix_6
-      - YouTube梦歌|Netflix_7
-      - YouTube梦歌|Netflix_8
-      - YouTube梦歌|Netflix_9
-      - YouTube梦歌|Netflix_10
-      - YouTube梦歌|Netflix_11
-      - YouTube梦歌|Netflix_12
-      - YouTube梦歌|Netflix_13
-      - YouTube梦歌|Netflix_14
-      - YouTube梦歌|Netflix_15
-      - YouTube梦歌|Netflix_16
-      - YouTube梦歌|Netflix_17
-      - YouTube梦歌|Netflix_18
-      - YouTube梦歌|Netflix_19
-      - YouTube梦歌|Netflix_20
-      - YouTube梦歌|Netflix_21
-      - YouTube梦歌|Netflix_22
-      - YouTube梦歌|Netflix_23
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_25
-      - YouTube梦歌|Netflix_26
-      - YouTube梦歌|Netflix_27
-      - YouTube梦歌|Netflix_28
-      - YouTube梦歌|Netflix_29
-      - YouTube梦歌|Netflix_30
-      - YouTube梦歌|Netflix_31
-      - YouTube梦歌|Netflix_32
-      - YouTube梦歌|Netflix_33
-      - YouTube梦歌|Netflix_34
-      - YouTube梦歌|Netflix_35
-      - YouTube梦歌|Netflix_36
-      - YouTube梦歌|Netflix_37
-      - YouTube梦歌|Netflix_38
-      - YouTube梦歌|Netflix_39
-      - YouTube梦歌|Netflix_40
-      - YouTube梦歌|Netflix_41
-      - YouTube梦歌|Netflix_42
-      - YouTube梦歌|Netflix_43
-      - YouTube梦歌|Netflix_44
-      - YouTube梦歌|Netflix_45
-      - YouTube梦歌|Netflix_46
-      - YouTube梦歌|Netflix_47
-      - YouTube梦歌|Netflix_48
-      - YouTube梦歌|Netflix_49
-      - YouTube梦歌|Netflix_50
-      - YouTube梦歌|Netflix_51
-      - YouTube梦歌|Netflix_52
-      - YouTube梦歌|Netflix_53
-      - YouTube梦歌|Netflix_54
-      - YouTube梦歌|Netflix_55
-      - YouTube梦歌|Netflix_56
-      - YouTube梦歌|Netflix_57
-      - YouTube梦歌|Netflix_58
-      - YouTube梦歌|Netflix_59
-      - YouTube梦歌|Netflix_60
-      - YouTube梦歌|Netflix_61
-      - YouTube梦歌|Netflix_62
-      - YouTube梦歌|Netflix_63
-      - YouTube梦歌|Netflix_64
-      - YouTube梦歌|Netflix_65
-      - YouTube梦歌|Netflix_66
-      - YouTube梦歌|Netflix_67
-      - YouTube梦歌|Netflix_68
-      - YouTube梦歌|Netflix_69
-      - YouTube梦歌|Netflix_70
-      - YouTube梦歌|Netflix_71
-      - YouTube梦歌|Netflix_72
-      - YouTube梦歌|Netflix_73
-      - YouTube梦歌|Netflix_74
-      - YouTube梦歌|Netflix_75
-      - YouTube梦歌|Netflix_76
-      - YouTube梦歌|Netflix_77
-      - YouTube梦歌|Netflix_78
-      - YouTube梦歌|Netflix_79
-      - YouTube梦歌|Netflix_80
-      - YouTube梦歌|Netflix_81
-      - YouTube梦歌|Netflix_82
-      - YouTube梦歌|Netflix_83
-      - YouTube梦歌|Netflix_84
-      - YouTube梦歌|Netflix_85
-      - YouTube梦歌|Netflix_86
-      - YouTube梦歌|Netflix_87
-      - YouTube梦歌|Netflix_88
-      - YouTube梦歌|Netflix_89
-      - YouTube梦歌|Netflix_90
-      - YouTube梦歌|Netflix_91
-      - YouTube梦歌|Netflix_92
-      - YouTube梦歌|Netflix_93
-      - YouTube梦歌|Netflix_94
-      - YouTube梦歌|Netflix_95
-      - YouTube梦歌|Netflix_96
-      - YouTube梦歌|Netflix_97
-      - YouTube梦歌|Netflix_98
-      - YouTube梦歌|Netflix_99
-      - YouTube梦歌|Netflix_100
-      - YouTube梦歌|Netflix_101
-      - YouTube梦歌|Netflix_102
-      - YouTube梦歌|Netflix_103
-      - YouTube梦歌|Netflix_104
-      - YouTube梦歌|Netflix_105
-      - YouTube梦歌|Netflix_106
-      - YouTube梦歌|Netflix_107
-      - YouTube梦歌|Netflix_108
-      - YouTube梦歌|Netflix_109
-      - YouTube梦歌|Netflix_110
-      - YouTube梦歌|Netflix_111
-      - YouTube梦歌|Netflix_112
-      - YouTube梦歌|Netflix_113
-      - YouTube梦歌|Netflix_114
-      - YouTube梦歌|Netflix_115
-      - YouTube梦歌|Netflix_116
-      - YouTube梦歌|Netflix_117
-      - YouTube梦歌|Netflix_118
-      - YouTube梦歌|Netflix_119
-      - YouTube梦歌|Netflix_120
-      - YouTube梦歌|Netflix_121
-      - YouTube梦歌|Netflix_122
-      - YouTube梦歌|Netflix_123
-      - YouTube梦歌|Netflix_124
-      - YouTube梦歌|Netflix_125
-      - YouTube梦歌|Netflix_126
-      - YouTube梦歌|Netflix_127
-      - YouTube梦歌|Netflix_128
-      - YouTube梦歌|Netflix_129
-      - YouTube梦歌|Netflix_130
-      - YouTube梦歌|Netflix_131
-      - YouTube梦歌|Netflix_132
-  - name: 📲 电报信息
+      - 🇭🇰 V0|香港|中转|01
+  - name: 🇺🇸 美国
     type: select
     proxies:
-      - 🚀 节点选择
+      - DIRECT
+  - name: 🇯🇵 日本
+    type: select
+    proxies:
+      - 🇯🇵 V01|日本|中转|01
+  - name: 🇸🇬 新加坡
+    type: select
+    proxies:
+      - 🇸🇬 V0|新加坡|中转|01
+  - name: 🇹🇼 台湾
+    type: select
+    proxies:
+      - DIRECT
+  - name: 专线
+    type: select
+    proxies:
+      - DIRECT
+  - name: 🎬 猫熊Emby
+    type: select
+    proxies:
+      - 🚀 手动切换
       - 🎯 全球直连
-      - YouTube梦歌|Netflix_1
-      - YouTube梦歌|Netflix_2
-      - YouTube梦歌|Netflix_3
-      - YouTube梦歌|Netflix_4
-      - YouTube梦歌|Netflix_5
-      - YouTube梦歌|Netflix_6
-      - YouTube梦歌|Netflix_7
-      - YouTube梦歌|Netflix_8
-      - YouTube梦歌|Netflix_9
-      - YouTube梦歌|Netflix_10
-      - YouTube梦歌|Netflix_11
-      - YouTube梦歌|Netflix_12
-      - YouTube梦歌|Netflix_13
-      - YouTube梦歌|Netflix_14
-      - YouTube梦歌|Netflix_15
-      - YouTube梦歌|Netflix_16
-      - YouTube梦歌|Netflix_17
-      - YouTube梦歌|Netflix_18
-      - YouTube梦歌|Netflix_19
-      - YouTube梦歌|Netflix_20
-      - YouTube梦歌|Netflix_21
-      - YouTube梦歌|Netflix_22
-      - YouTube梦歌|Netflix_23
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_25
-      - YouTube梦歌|Netflix_26
-      - YouTube梦歌|Netflix_27
-      - YouTube梦歌|Netflix_28
-      - YouTube梦歌|Netflix_29
-      - YouTube梦歌|Netflix_30
-      - YouTube梦歌|Netflix_31
-      - YouTube梦歌|Netflix_32
-      - YouTube梦歌|Netflix_33
-      - YouTube梦歌|Netflix_34
-      - YouTube梦歌|Netflix_35
-      - YouTube梦歌|Netflix_36
-      - YouTube梦歌|Netflix_37
-      - YouTube梦歌|Netflix_38
-      - YouTube梦歌|Netflix_39
-      - YouTube梦歌|Netflix_40
-      - YouTube梦歌|Netflix_41
-      - YouTube梦歌|Netflix_42
-      - YouTube梦歌|Netflix_43
-      - YouTube梦歌|Netflix_44
-      - YouTube梦歌|Netflix_45
-      - YouTube梦歌|Netflix_46
-      - YouTube梦歌|Netflix_47
-      - YouTube梦歌|Netflix_48
-      - YouTube梦歌|Netflix_49
-      - YouTube梦歌|Netflix_50
-      - YouTube梦歌|Netflix_51
-      - YouTube梦歌|Netflix_52
-      - YouTube梦歌|Netflix_53
-      - YouTube梦歌|Netflix_54
-      - YouTube梦歌|Netflix_55
-      - YouTube梦歌|Netflix_56
-      - YouTube梦歌|Netflix_57
-      - YouTube梦歌|Netflix_58
-      - YouTube梦歌|Netflix_59
-      - YouTube梦歌|Netflix_60
-      - YouTube梦歌|Netflix_61
-      - YouTube梦歌|Netflix_62
-      - YouTube梦歌|Netflix_63
-      - YouTube梦歌|Netflix_64
-      - YouTube梦歌|Netflix_65
-      - YouTube梦歌|Netflix_66
-      - YouTube梦歌|Netflix_67
-      - YouTube梦歌|Netflix_68
-      - YouTube梦歌|Netflix_69
-      - YouTube梦歌|Netflix_70
-      - YouTube梦歌|Netflix_71
-      - YouTube梦歌|Netflix_72
-      - YouTube梦歌|Netflix_73
-      - YouTube梦歌|Netflix_74
-      - YouTube梦歌|Netflix_75
-      - YouTube梦歌|Netflix_76
-      - YouTube梦歌|Netflix_77
-      - YouTube梦歌|Netflix_78
-      - YouTube梦歌|Netflix_79
-      - YouTube梦歌|Netflix_80
-      - YouTube梦歌|Netflix_81
-      - YouTube梦歌|Netflix_82
-      - YouTube梦歌|Netflix_83
-      - YouTube梦歌|Netflix_84
-      - YouTube梦歌|Netflix_85
-      - YouTube梦歌|Netflix_86
-      - YouTube梦歌|Netflix_87
-      - YouTube梦歌|Netflix_88
-      - YouTube梦歌|Netflix_89
-      - YouTube梦歌|Netflix_90
-      - YouTube梦歌|Netflix_91
-      - YouTube梦歌|Netflix_92
-      - YouTube梦歌|Netflix_93
-      - YouTube梦歌|Netflix_94
-      - YouTube梦歌|Netflix_95
-      - YouTube梦歌|Netflix_96
-      - YouTube梦歌|Netflix_97
-      - YouTube梦歌|Netflix_98
-      - YouTube梦歌|Netflix_99
-      - YouTube梦歌|Netflix_100
-      - YouTube梦歌|Netflix_101
-      - YouTube梦歌|Netflix_102
-      - YouTube梦歌|Netflix_103
-      - YouTube梦歌|Netflix_104
-      - YouTube梦歌|Netflix_105
-      - YouTube梦歌|Netflix_106
-      - YouTube梦歌|Netflix_107
-      - YouTube梦歌|Netflix_108
-      - YouTube梦歌|Netflix_109
-      - YouTube梦歌|Netflix_110
-      - YouTube梦歌|Netflix_111
-      - YouTube梦歌|Netflix_112
-      - YouTube梦歌|Netflix_113
-      - YouTube梦歌|Netflix_114
-      - YouTube梦歌|Netflix_115
-      - YouTube梦歌|Netflix_116
-      - YouTube梦歌|Netflix_117
-      - YouTube梦歌|Netflix_118
-      - YouTube梦歌|Netflix_119
-      - YouTube梦歌|Netflix_120
-      - YouTube梦歌|Netflix_121
-      - YouTube梦歌|Netflix_122
-      - YouTube梦歌|Netflix_123
-      - YouTube梦歌|Netflix_124
-      - YouTube梦歌|Netflix_125
-      - YouTube梦歌|Netflix_126
-      - YouTube梦歌|Netflix_127
-      - YouTube梦歌|Netflix_128
-      - YouTube梦歌|Netflix_129
-      - YouTube梦歌|Netflix_130
-      - YouTube梦歌|Netflix_131
-      - YouTube梦歌|Netflix_132
+  - name: 📺 巴哈姆特动画疯
+    type: select
+    proxies:
+      - DIRECT
+  - name: 🅱️️ 哔哩哔哩港澳台
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🇭🇰 V0|香港|中转|01
+  - name: 📹 YouTube
+    type: select
+    proxies:
+      - 🚀 手动切换
+      - 🇸🇬 V0|新加坡|中转|01
+      - 🇭🇰 V0|香港|中转|01
+      - 🇯🇵 V01|日本|中转|01
+  - name: 🎥 NETFLIX
+    type: select
+    proxies:
+      - 🚀 手动切换
+  - name: 🦄 DisneyPlus
+    type: select
+    proxies:
+      - 🇭🇰 香港
+      - 🇺🇸 美国
+      - 🇯🇵 日本
+      - 🇸🇬 新加坡
+      - 🇹🇼 台湾
+      - 🚀 手动切换
+      - 🇸🇬 V0|新加坡|中转|01
+      - 🇭🇰 V0|香港|中转|01
+      - 🇯🇵 V01|日本|中转|01
+  - name: 💿 AbemaTV
+    type: select
+    proxies:
+      - DIRECT
+  - name: 🔞 Pornhub
+    type: select
+    proxies:
+      - 🚀 手动切换
+      - 🇸🇬 V0|新加坡|中转|01
+      - 🇭🇰 V0|香港|中转|01
+      - 🇯🇵 V01|日本|中转|01
+  - name: 🎶 TikTok
+    type: select
+    proxies:
+      - 🚀 手动切换
+      - 🇸🇬 V0|新加坡|中转|01
+      - 🇭🇰 V0|香港|中转|01
+      - 🇯🇵 V01|日本|中转|01
+  - name: 🎧 Spotify
+    type: select
+    proxies:
+      - 🚀 手动切换
+      - 🎯 全球直连
+      - 🇸🇬 V0|新加坡|中转|01
+      - 🇭🇰 V0|香港|中转|01
+      - 🇯🇵 V01|日本|中转|01
+  - name: 📷 Ins&FB&Twitter
+    type: select
+    proxies:
+      - 🚀 手动切换
+      - 🇸🇬 V0|新加坡|中转|01
+      - 🇭🇰 V0|香港|中转|01
+      - 🇯🇵 V01|日本|中转|01
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
-      - 🚀 节点选择
-      - YouTube梦歌|Netflix_1
-      - YouTube梦歌|Netflix_2
-      - YouTube梦歌|Netflix_3
-      - YouTube梦歌|Netflix_4
-      - YouTube梦歌|Netflix_5
-      - YouTube梦歌|Netflix_6
-      - YouTube梦歌|Netflix_7
-      - YouTube梦歌|Netflix_8
-      - YouTube梦歌|Netflix_9
-      - YouTube梦歌|Netflix_10
-      - YouTube梦歌|Netflix_11
-      - YouTube梦歌|Netflix_12
-      - YouTube梦歌|Netflix_13
-      - YouTube梦歌|Netflix_14
-      - YouTube梦歌|Netflix_15
-      - YouTube梦歌|Netflix_16
-      - YouTube梦歌|Netflix_17
-      - YouTube梦歌|Netflix_18
-      - YouTube梦歌|Netflix_19
-      - YouTube梦歌|Netflix_20
-      - YouTube梦歌|Netflix_21
-      - YouTube梦歌|Netflix_22
-      - YouTube梦歌|Netflix_23
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_25
-      - YouTube梦歌|Netflix_26
-      - YouTube梦歌|Netflix_27
-      - YouTube梦歌|Netflix_28
-      - YouTube梦歌|Netflix_29
-      - YouTube梦歌|Netflix_30
-      - YouTube梦歌|Netflix_31
-      - YouTube梦歌|Netflix_32
-      - YouTube梦歌|Netflix_33
-      - YouTube梦歌|Netflix_34
-      - YouTube梦歌|Netflix_35
-      - YouTube梦歌|Netflix_36
-      - YouTube梦歌|Netflix_37
-      - YouTube梦歌|Netflix_38
-      - YouTube梦歌|Netflix_39
-      - YouTube梦歌|Netflix_40
-      - YouTube梦歌|Netflix_41
-      - YouTube梦歌|Netflix_42
-      - YouTube梦歌|Netflix_43
-      - YouTube梦歌|Netflix_44
-      - YouTube梦歌|Netflix_45
-      - YouTube梦歌|Netflix_46
-      - YouTube梦歌|Netflix_47
-      - YouTube梦歌|Netflix_48
-      - YouTube梦歌|Netflix_49
-      - YouTube梦歌|Netflix_50
-      - YouTube梦歌|Netflix_51
-      - YouTube梦歌|Netflix_52
-      - YouTube梦歌|Netflix_53
-      - YouTube梦歌|Netflix_54
-      - YouTube梦歌|Netflix_55
-      - YouTube梦歌|Netflix_56
-      - YouTube梦歌|Netflix_57
-      - YouTube梦歌|Netflix_58
-      - YouTube梦歌|Netflix_59
-      - YouTube梦歌|Netflix_60
-      - YouTube梦歌|Netflix_61
-      - YouTube梦歌|Netflix_62
-      - YouTube梦歌|Netflix_63
-      - YouTube梦歌|Netflix_64
-      - YouTube梦歌|Netflix_65
-      - YouTube梦歌|Netflix_66
-      - YouTube梦歌|Netflix_67
-      - YouTube梦歌|Netflix_68
-      - YouTube梦歌|Netflix_69
-      - YouTube梦歌|Netflix_70
-      - YouTube梦歌|Netflix_71
-      - YouTube梦歌|Netflix_72
-      - YouTube梦歌|Netflix_73
-      - YouTube梦歌|Netflix_74
-      - YouTube梦歌|Netflix_75
-      - YouTube梦歌|Netflix_76
-      - YouTube梦歌|Netflix_77
-      - YouTube梦歌|Netflix_78
-      - YouTube梦歌|Netflix_79
-      - YouTube梦歌|Netflix_80
-      - YouTube梦歌|Netflix_81
-      - YouTube梦歌|Netflix_82
-      - YouTube梦歌|Netflix_83
-      - YouTube梦歌|Netflix_84
-      - YouTube梦歌|Netflix_85
-      - YouTube梦歌|Netflix_86
-      - YouTube梦歌|Netflix_87
-      - YouTube梦歌|Netflix_88
-      - YouTube梦歌|Netflix_89
-      - YouTube梦歌|Netflix_90
-      - YouTube梦歌|Netflix_91
-      - YouTube梦歌|Netflix_92
-      - YouTube梦歌|Netflix_93
-      - YouTube梦歌|Netflix_94
-      - YouTube梦歌|Netflix_95
-      - YouTube梦歌|Netflix_96
-      - YouTube梦歌|Netflix_97
-      - YouTube梦歌|Netflix_98
-      - YouTube梦歌|Netflix_99
-      - YouTube梦歌|Netflix_100
-      - YouTube梦歌|Netflix_101
-      - YouTube梦歌|Netflix_102
-      - YouTube梦歌|Netflix_103
-      - YouTube梦歌|Netflix_104
-      - YouTube梦歌|Netflix_105
-      - YouTube梦歌|Netflix_106
-      - YouTube梦歌|Netflix_107
-      - YouTube梦歌|Netflix_108
-      - YouTube梦歌|Netflix_109
-      - YouTube梦歌|Netflix_110
-      - YouTube梦歌|Netflix_111
-      - YouTube梦歌|Netflix_112
-      - YouTube梦歌|Netflix_113
-      - YouTube梦歌|Netflix_114
-      - YouTube梦歌|Netflix_115
-      - YouTube梦歌|Netflix_116
-      - YouTube梦歌|Netflix_117
-      - YouTube梦歌|Netflix_118
-      - YouTube梦歌|Netflix_119
-      - YouTube梦歌|Netflix_120
-      - YouTube梦歌|Netflix_121
-      - YouTube梦歌|Netflix_122
-      - YouTube梦歌|Netflix_123
-      - YouTube梦歌|Netflix_124
-      - YouTube梦歌|Netflix_125
-      - YouTube梦歌|Netflix_126
-      - YouTube梦歌|Netflix_127
-      - YouTube梦歌|Netflix_128
-      - YouTube梦歌|Netflix_129
-      - YouTube梦歌|Netflix_130
-      - YouTube梦歌|Netflix_131
-      - YouTube梦歌|Netflix_132
+      - 🚀 手动切换
+      - 🇸🇬 V0|新加坡|中转|01
+      - 🇭🇰 V0|香港|中转|01
+      - 🇯🇵 V01|日本|中转|01
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 手动切换
+      - 🎯 全球直连
+      - 🇸🇬 V0|新加坡|中转|01
+      - 🇭🇰 V0|香港|中转|01
+      - 🇯🇵 V01|日本|中转|01
   - name: 🍎 苹果服务
     type: select
     proxies:
-      - 🚀 节点选择
       - 🎯 全球直连
-      - YouTube梦歌|Netflix_1
-      - YouTube梦歌|Netflix_2
-      - YouTube梦歌|Netflix_3
-      - YouTube梦歌|Netflix_4
-      - YouTube梦歌|Netflix_5
-      - YouTube梦歌|Netflix_6
-      - YouTube梦歌|Netflix_7
-      - YouTube梦歌|Netflix_8
-      - YouTube梦歌|Netflix_9
-      - YouTube梦歌|Netflix_10
-      - YouTube梦歌|Netflix_11
-      - YouTube梦歌|Netflix_12
-      - YouTube梦歌|Netflix_13
-      - YouTube梦歌|Netflix_14
-      - YouTube梦歌|Netflix_15
-      - YouTube梦歌|Netflix_16
-      - YouTube梦歌|Netflix_17
-      - YouTube梦歌|Netflix_18
-      - YouTube梦歌|Netflix_19
-      - YouTube梦歌|Netflix_20
-      - YouTube梦歌|Netflix_21
-      - YouTube梦歌|Netflix_22
-      - YouTube梦歌|Netflix_23
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_25
-      - YouTube梦歌|Netflix_26
-      - YouTube梦歌|Netflix_27
-      - YouTube梦歌|Netflix_28
-      - YouTube梦歌|Netflix_29
-      - YouTube梦歌|Netflix_30
-      - YouTube梦歌|Netflix_31
-      - YouTube梦歌|Netflix_32
-      - YouTube梦歌|Netflix_33
-      - YouTube梦歌|Netflix_34
-      - YouTube梦歌|Netflix_35
-      - YouTube梦歌|Netflix_36
-      - YouTube梦歌|Netflix_37
-      - YouTube梦歌|Netflix_38
-      - YouTube梦歌|Netflix_39
-      - YouTube梦歌|Netflix_40
-      - YouTube梦歌|Netflix_41
-      - YouTube梦歌|Netflix_42
-      - YouTube梦歌|Netflix_43
-      - YouTube梦歌|Netflix_44
-      - YouTube梦歌|Netflix_45
-      - YouTube梦歌|Netflix_46
-      - YouTube梦歌|Netflix_47
-      - YouTube梦歌|Netflix_48
-      - YouTube梦歌|Netflix_49
-      - YouTube梦歌|Netflix_50
-      - YouTube梦歌|Netflix_51
-      - YouTube梦歌|Netflix_52
-      - YouTube梦歌|Netflix_53
-      - YouTube梦歌|Netflix_54
-      - YouTube梦歌|Netflix_55
-      - YouTube梦歌|Netflix_56
-      - YouTube梦歌|Netflix_57
-      - YouTube梦歌|Netflix_58
-      - YouTube梦歌|Netflix_59
-      - YouTube梦歌|Netflix_60
-      - YouTube梦歌|Netflix_61
-      - YouTube梦歌|Netflix_62
-      - YouTube梦歌|Netflix_63
-      - YouTube梦歌|Netflix_64
-      - YouTube梦歌|Netflix_65
-      - YouTube梦歌|Netflix_66
-      - YouTube梦歌|Netflix_67
-      - YouTube梦歌|Netflix_68
-      - YouTube梦歌|Netflix_69
-      - YouTube梦歌|Netflix_70
-      - YouTube梦歌|Netflix_71
-      - YouTube梦歌|Netflix_72
-      - YouTube梦歌|Netflix_73
-      - YouTube梦歌|Netflix_74
-      - YouTube梦歌|Netflix_75
-      - YouTube梦歌|Netflix_76
-      - YouTube梦歌|Netflix_77
-      - YouTube梦歌|Netflix_78
-      - YouTube梦歌|Netflix_79
-      - YouTube梦歌|Netflix_80
-      - YouTube梦歌|Netflix_81
-      - YouTube梦歌|Netflix_82
-      - YouTube梦歌|Netflix_83
-      - YouTube梦歌|Netflix_84
-      - YouTube梦歌|Netflix_85
-      - YouTube梦歌|Netflix_86
-      - YouTube梦歌|Netflix_87
-      - YouTube梦歌|Netflix_88
-      - YouTube梦歌|Netflix_89
-      - YouTube梦歌|Netflix_90
-      - YouTube梦歌|Netflix_91
-      - YouTube梦歌|Netflix_92
-      - YouTube梦歌|Netflix_93
-      - YouTube梦歌|Netflix_94
-      - YouTube梦歌|Netflix_95
-      - YouTube梦歌|Netflix_96
-      - YouTube梦歌|Netflix_97
-      - YouTube梦歌|Netflix_98
-      - YouTube梦歌|Netflix_99
-      - YouTube梦歌|Netflix_100
-      - YouTube梦歌|Netflix_101
-      - YouTube梦歌|Netflix_102
-      - YouTube梦歌|Netflix_103
-      - YouTube梦歌|Netflix_104
-      - YouTube梦歌|Netflix_105
-      - YouTube梦歌|Netflix_106
-      - YouTube梦歌|Netflix_107
-      - YouTube梦歌|Netflix_108
-      - YouTube梦歌|Netflix_109
-      - YouTube梦歌|Netflix_110
-      - YouTube梦歌|Netflix_111
-      - YouTube梦歌|Netflix_112
-      - YouTube梦歌|Netflix_113
-      - YouTube梦歌|Netflix_114
-      - YouTube梦歌|Netflix_115
-      - YouTube梦歌|Netflix_116
-      - YouTube梦歌|Netflix_117
-      - YouTube梦歌|Netflix_118
-      - YouTube梦歌|Netflix_119
-      - YouTube梦歌|Netflix_120
-      - YouTube梦歌|Netflix_121
-      - YouTube梦歌|Netflix_122
-      - YouTube梦歌|Netflix_123
-      - YouTube梦歌|Netflix_124
-      - YouTube梦歌|Netflix_125
-      - YouTube梦歌|Netflix_126
-      - YouTube梦歌|Netflix_127
-      - YouTube梦歌|Netflix_128
-      - YouTube梦歌|Netflix_129
-      - YouTube梦歌|Netflix_130
-      - YouTube梦歌|Netflix_131
-      - YouTube梦歌|Netflix_132
-  - name: 📢 谷歌FCM
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🎯 全球直连
-      - ♻️ 自动选择
-      - YouTube梦歌|Netflix_1
-      - YouTube梦歌|Netflix_2
-      - YouTube梦歌|Netflix_3
-      - YouTube梦歌|Netflix_4
-      - YouTube梦歌|Netflix_5
-      - YouTube梦歌|Netflix_6
-      - YouTube梦歌|Netflix_7
-      - YouTube梦歌|Netflix_8
-      - YouTube梦歌|Netflix_9
-      - YouTube梦歌|Netflix_10
-      - YouTube梦歌|Netflix_11
-      - YouTube梦歌|Netflix_12
-      - YouTube梦歌|Netflix_13
-      - YouTube梦歌|Netflix_14
-      - YouTube梦歌|Netflix_15
-      - YouTube梦歌|Netflix_16
-      - YouTube梦歌|Netflix_17
-      - YouTube梦歌|Netflix_18
-      - YouTube梦歌|Netflix_19
-      - YouTube梦歌|Netflix_20
-      - YouTube梦歌|Netflix_21
-      - YouTube梦歌|Netflix_22
-      - YouTube梦歌|Netflix_23
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_25
-      - YouTube梦歌|Netflix_26
-      - YouTube梦歌|Netflix_27
-      - YouTube梦歌|Netflix_28
-      - YouTube梦歌|Netflix_29
-      - YouTube梦歌|Netflix_30
-      - YouTube梦歌|Netflix_31
-      - YouTube梦歌|Netflix_32
-      - YouTube梦歌|Netflix_33
-      - YouTube梦歌|Netflix_34
-      - YouTube梦歌|Netflix_35
-      - YouTube梦歌|Netflix_36
-      - YouTube梦歌|Netflix_37
-      - YouTube梦歌|Netflix_38
-      - YouTube梦歌|Netflix_39
-      - YouTube梦歌|Netflix_40
-      - YouTube梦歌|Netflix_41
-      - YouTube梦歌|Netflix_42
-      - YouTube梦歌|Netflix_43
-      - YouTube梦歌|Netflix_44
-      - YouTube梦歌|Netflix_45
-      - YouTube梦歌|Netflix_46
-      - YouTube梦歌|Netflix_47
-      - YouTube梦歌|Netflix_48
-      - YouTube梦歌|Netflix_49
-      - YouTube梦歌|Netflix_50
-      - YouTube梦歌|Netflix_51
-      - YouTube梦歌|Netflix_52
-      - YouTube梦歌|Netflix_53
-      - YouTube梦歌|Netflix_54
-      - YouTube梦歌|Netflix_55
-      - YouTube梦歌|Netflix_56
-      - YouTube梦歌|Netflix_57
-      - YouTube梦歌|Netflix_58
-      - YouTube梦歌|Netflix_59
-      - YouTube梦歌|Netflix_60
-      - YouTube梦歌|Netflix_61
-      - YouTube梦歌|Netflix_62
-      - YouTube梦歌|Netflix_63
-      - YouTube梦歌|Netflix_64
-      - YouTube梦歌|Netflix_65
-      - YouTube梦歌|Netflix_66
-      - YouTube梦歌|Netflix_67
-      - YouTube梦歌|Netflix_68
-      - YouTube梦歌|Netflix_69
-      - YouTube梦歌|Netflix_70
-      - YouTube梦歌|Netflix_71
-      - YouTube梦歌|Netflix_72
-      - YouTube梦歌|Netflix_73
-      - YouTube梦歌|Netflix_74
-      - YouTube梦歌|Netflix_75
-      - YouTube梦歌|Netflix_76
-      - YouTube梦歌|Netflix_77
-      - YouTube梦歌|Netflix_78
-      - YouTube梦歌|Netflix_79
-      - YouTube梦歌|Netflix_80
-      - YouTube梦歌|Netflix_81
-      - YouTube梦歌|Netflix_82
-      - YouTube梦歌|Netflix_83
-      - YouTube梦歌|Netflix_84
-      - YouTube梦歌|Netflix_85
-      - YouTube梦歌|Netflix_86
-      - YouTube梦歌|Netflix_87
-      - YouTube梦歌|Netflix_88
-      - YouTube梦歌|Netflix_89
-      - YouTube梦歌|Netflix_90
-      - YouTube梦歌|Netflix_91
-      - YouTube梦歌|Netflix_92
-      - YouTube梦歌|Netflix_93
-      - YouTube梦歌|Netflix_94
-      - YouTube梦歌|Netflix_95
-      - YouTube梦歌|Netflix_96
-      - YouTube梦歌|Netflix_97
-      - YouTube梦歌|Netflix_98
-      - YouTube梦歌|Netflix_99
-      - YouTube梦歌|Netflix_100
-      - YouTube梦歌|Netflix_101
-      - YouTube梦歌|Netflix_102
-      - YouTube梦歌|Netflix_103
-      - YouTube梦歌|Netflix_104
-      - YouTube梦歌|Netflix_105
-      - YouTube梦歌|Netflix_106
-      - YouTube梦歌|Netflix_107
-      - YouTube梦歌|Netflix_108
-      - YouTube梦歌|Netflix_109
-      - YouTube梦歌|Netflix_110
-      - YouTube梦歌|Netflix_111
-      - YouTube梦歌|Netflix_112
-      - YouTube梦歌|Netflix_113
-      - YouTube梦歌|Netflix_114
-      - YouTube梦歌|Netflix_115
-      - YouTube梦歌|Netflix_116
-      - YouTube梦歌|Netflix_117
-      - YouTube梦歌|Netflix_118
-      - YouTube梦歌|Netflix_119
-      - YouTube梦歌|Netflix_120
-      - YouTube梦歌|Netflix_121
-      - YouTube梦歌|Netflix_122
-      - YouTube梦歌|Netflix_123
-      - YouTube梦歌|Netflix_124
-      - YouTube梦歌|Netflix_125
-      - YouTube梦歌|Netflix_126
-      - YouTube梦歌|Netflix_127
-      - YouTube梦歌|Netflix_128
-      - YouTube梦歌|Netflix_129
-      - YouTube梦歌|Netflix_130
-      - YouTube梦歌|Netflix_131
-      - YouTube梦歌|Netflix_132
+      - 🚀 手动切换
+      - 🇸🇬 V0|新加坡|中转|01
+      - 🇭🇰 V0|香港|中转|01
+      - 🇯🇵 V01|日本|中转|01
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
-      - 🚀 节点选择
-      - ♻️ 自动选择
+      - 🚀 手动切换
+      - 🇸🇬 V0|新加坡|中转|01
+      - 🇭🇰 V0|香港|中转|01
+      - 🇯🇵 V01|日本|中转|01
   - name: 🛑 全球拦截
     type: select
     proxies:
@@ -1118,189 +161,12 @@ proxy-groups:
   - name: 🐟 漏网之鱼
     type: select
     proxies:
-      - 🚀 节点选择
+      - 🚀 手动切换
       - 🎯 全球直连
-      - ♻️ 自动选择
-      - YouTube梦歌|Netflix_1
-      - YouTube梦歌|Netflix_2
-      - YouTube梦歌|Netflix_3
-      - YouTube梦歌|Netflix_4
-      - YouTube梦歌|Netflix_5
-      - YouTube梦歌|Netflix_6
-      - YouTube梦歌|Netflix_7
-      - YouTube梦歌|Netflix_8
-      - YouTube梦歌|Netflix_9
-      - YouTube梦歌|Netflix_10
-      - YouTube梦歌|Netflix_11
-      - YouTube梦歌|Netflix_12
-      - YouTube梦歌|Netflix_13
-      - YouTube梦歌|Netflix_14
-      - YouTube梦歌|Netflix_15
-      - YouTube梦歌|Netflix_16
-      - YouTube梦歌|Netflix_17
-      - YouTube梦歌|Netflix_18
-      - YouTube梦歌|Netflix_19
-      - YouTube梦歌|Netflix_20
-      - YouTube梦歌|Netflix_21
-      - YouTube梦歌|Netflix_22
-      - YouTube梦歌|Netflix_23
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_25
-      - YouTube梦歌|Netflix_26
-      - YouTube梦歌|Netflix_27
-      - YouTube梦歌|Netflix_28
-      - YouTube梦歌|Netflix_29
-      - YouTube梦歌|Netflix_30
-      - YouTube梦歌|Netflix_31
-      - YouTube梦歌|Netflix_32
-      - YouTube梦歌|Netflix_33
-      - YouTube梦歌|Netflix_34
-      - YouTube梦歌|Netflix_35
-      - YouTube梦歌|Netflix_36
-      - YouTube梦歌|Netflix_37
-      - YouTube梦歌|Netflix_38
-      - YouTube梦歌|Netflix_39
-      - YouTube梦歌|Netflix_40
-      - YouTube梦歌|Netflix_41
-      - YouTube梦歌|Netflix_42
-      - YouTube梦歌|Netflix_43
-      - YouTube梦歌|Netflix_44
-      - YouTube梦歌|Netflix_45
-      - YouTube梦歌|Netflix_46
-      - YouTube梦歌|Netflix_47
-      - YouTube梦歌|Netflix_48
-      - YouTube梦歌|Netflix_49
-      - YouTube梦歌|Netflix_50
-      - YouTube梦歌|Netflix_51
-      - YouTube梦歌|Netflix_52
-      - YouTube梦歌|Netflix_53
-      - YouTube梦歌|Netflix_54
-      - YouTube梦歌|Netflix_55
-      - YouTube梦歌|Netflix_56
-      - YouTube梦歌|Netflix_57
-      - YouTube梦歌|Netflix_58
-      - YouTube梦歌|Netflix_59
-      - YouTube梦歌|Netflix_60
-      - YouTube梦歌|Netflix_61
-      - YouTube梦歌|Netflix_62
-      - YouTube梦歌|Netflix_63
-      - YouTube梦歌|Netflix_64
-      - YouTube梦歌|Netflix_65
-      - YouTube梦歌|Netflix_66
-      - YouTube梦歌|Netflix_67
-      - YouTube梦歌|Netflix_68
-      - YouTube梦歌|Netflix_69
-      - YouTube梦歌|Netflix_70
-      - YouTube梦歌|Netflix_71
-      - YouTube梦歌|Netflix_72
-      - YouTube梦歌|Netflix_73
-      - YouTube梦歌|Netflix_74
-      - YouTube梦歌|Netflix_75
-      - YouTube梦歌|Netflix_76
-      - YouTube梦歌|Netflix_77
-      - YouTube梦歌|Netflix_78
-      - YouTube梦歌|Netflix_79
-      - YouTube梦歌|Netflix_80
-      - YouTube梦歌|Netflix_81
-      - YouTube梦歌|Netflix_82
-      - YouTube梦歌|Netflix_83
-      - YouTube梦歌|Netflix_84
-      - YouTube梦歌|Netflix_85
-      - YouTube梦歌|Netflix_86
-      - YouTube梦歌|Netflix_87
-      - YouTube梦歌|Netflix_88
-      - YouTube梦歌|Netflix_89
-      - YouTube梦歌|Netflix_90
-      - YouTube梦歌|Netflix_91
-      - YouTube梦歌|Netflix_92
-      - YouTube梦歌|Netflix_93
-      - YouTube梦歌|Netflix_94
-      - YouTube梦歌|Netflix_95
-      - YouTube梦歌|Netflix_96
-      - YouTube梦歌|Netflix_97
-      - YouTube梦歌|Netflix_98
-      - YouTube梦歌|Netflix_99
-      - YouTube梦歌|Netflix_100
-      - YouTube梦歌|Netflix_101
-      - YouTube梦歌|Netflix_102
-      - YouTube梦歌|Netflix_103
-      - YouTube梦歌|Netflix_104
-      - YouTube梦歌|Netflix_105
-      - YouTube梦歌|Netflix_106
-      - YouTube梦歌|Netflix_107
-      - YouTube梦歌|Netflix_108
-      - YouTube梦歌|Netflix_109
-      - YouTube梦歌|Netflix_110
-      - YouTube梦歌|Netflix_111
-      - YouTube梦歌|Netflix_112
-      - YouTube梦歌|Netflix_113
-      - YouTube梦歌|Netflix_114
-      - YouTube梦歌|Netflix_115
-      - YouTube梦歌|Netflix_116
-      - YouTube梦歌|Netflix_117
-      - YouTube梦歌|Netflix_118
-      - YouTube梦歌|Netflix_119
-      - YouTube梦歌|Netflix_120
-      - YouTube梦歌|Netflix_121
-      - YouTube梦歌|Netflix_122
-      - YouTube梦歌|Netflix_123
-      - YouTube梦歌|Netflix_124
-      - YouTube梦歌|Netflix_125
-      - YouTube梦歌|Netflix_126
-      - YouTube梦歌|Netflix_127
-      - YouTube梦歌|Netflix_128
-      - YouTube梦歌|Netflix_129
-      - YouTube梦歌|Netflix_130
-      - YouTube梦歌|Netflix_131
-      - YouTube梦歌|Netflix_132
+      - 🇸🇬 V0|新加坡|中转|01
+      - 🇭🇰 V0|香港|中转|01
+      - 🇯🇵 V01|日本|中转|01
 rules:
- - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
- - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
- - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
- - DOMAIN-SUFFIX,local,🎯 全球直连
- - DOMAIN-SUFFIX,localhost,🎯 全球直连
- - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
- - IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
- - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
- - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
- - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR6,::1/128,🎯 全球直连,no-resolve
- - IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
- - IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
- - IP-CIDR6,fd00::/8,🎯 全球直连,no-resolve
- - DOMAIN,instant.arubanetworks.com,🎯 全球直连
- - DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
- - DOMAIN,router.asus.com,🎯 全球直连
- - DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
- - DOMAIN-SUFFIX,leike.cc,🎯 全球直连
- - DOMAIN-SUFFIX,miwifi.com,🎯 全球直连
- - DOMAIN-SUFFIX,my.router,🎯 全球直连
- - DOMAIN-SUFFIX,p.to,🎯 全球直连
- - DOMAIN-SUFFIX,peiluyou.com,🎯 全球直连
- - DOMAIN-SUFFIX,phicomm.me,🎯 全球直连
- - DOMAIN-SUFFIX,router.ctc,🎯 全球直连
- - DOMAIN-SUFFIX,routerlogin.com,🎯 全球直连
- - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
- - DOMAIN-SUFFIX,zte.home,🎯 全球直连
- - DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
- - DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
- - DOMAIN,dl.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,googletraveladservices.com,🎯 全球直连
- - DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 全球直连
- - DOMAIN,origin-a.akamaihd.net,🎯 全球直连
- - DOMAIN,xivanalysis.com,🎯 全球直连
- - DOMAIN,picanalysis.vivo.com.cn,🎯 全球直连
- - DOMAIN,fairplay.l.qq.com,🎯 全球直连
- - DOMAIN,livew.l.qq.com,🎯 全球直连
- - DOMAIN,vd.l.qq.com,🎯 全球直连
- - DOMAIN,analytics.strava.com,🎯 全球直连
- - DOMAIN,errlog.umeng.com,🎯 全球直连
- - DOMAIN,msg.umeng.com,🎯 全球直连
- - DOMAIN,msg.umengcloud.com,🎯 全球直连
- - DOMAIN,tracking.miui.com,🎯 全球直连
- - DOMAIN,app.adjust.com,🎯 全球直连
- - DOMAIN,bdtj.tagtic.cn,🎯 全球直连
  - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
  - DOMAIN-KEYWORD,admaster,🛑 全球拦截
  - DOMAIN-KEYWORD,adsage,🛑 全球拦截
@@ -2926,94 +1792,164 @@ rules:
  - DOMAIN-SUFFIX,tralog.ganji.com,🍃 应用净化
  - DOMAIN-SUFFIX,up.qingdaonews.com,🍃 应用净化
  - DOMAIN-SUFFIX,vaserviece.10jqka.com.cn,🍃 应用净化
- - DOMAIN,alt1-mtalk.google.com,📢 谷歌FCM
- - DOMAIN,alt2-mtalk.google.com,📢 谷歌FCM
- - DOMAIN,alt3-mtalk.google.com,📢 谷歌FCM
- - DOMAIN,alt4-mtalk.google.com,📢 谷歌FCM
- - DOMAIN,alt5-mtalk.google.com,📢 谷歌FCM
- - DOMAIN,alt6-mtalk.google.com,📢 谷歌FCM
- - DOMAIN,alt7-mtalk.google.com,📢 谷歌FCM
- - DOMAIN,alt8-mtalk.google.com,📢 谷歌FCM
- - DOMAIN,mtalk.google.com,📢 谷歌FCM
- - IP-CIDR,64.233.177.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,64.233.186.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,64.233.187.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,64.233.188.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,64.233.189.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,74.125.23.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,74.125.24.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,74.125.28.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,74.125.127.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,74.125.137.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,74.125.203.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,74.125.204.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,74.125.206.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,108.177.125.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,142.250.4.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,142.250.10.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,142.250.31.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,142.250.96.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,172.217.194.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,172.217.218.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,172.217.219.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,172.253.63.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,172.253.122.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,173.194.175.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,173.194.218.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,209.85.233.188/32,📢 谷歌FCM,no-resolve
- - DOMAIN-SUFFIX,265.com,🎯 全球直连
- - DOMAIN-SUFFIX,2mdn.net,🎯 全球直连
- - DOMAIN-SUFFIX,alt1-mtalk.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,alt2-mtalk.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,alt3-mtalk.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,alt4-mtalk.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,alt5-mtalk.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,alt6-mtalk.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,alt7-mtalk.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,alt8-mtalk.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,app-measurement.com,🎯 全球直连
- - DOMAIN-SUFFIX,c.android.clients.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,cache.pack.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,clickserve.dartsearch.net,🎯 全球直连
- - DOMAIN-SUFFIX,clientservices.googleapis.com,🎯 全球直连
- - DOMAIN-SUFFIX,crl.pki.goog,🎯 全球直连
- - DOMAIN-SUFFIX,dl.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,dl.l.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,fonts.googleapis.com,🎯 全球直连
- - DOMAIN-SUFFIX,fonts.gstatic.com,🎯 全球直连
- - DOMAIN-SUFFIX,googletagmanager.com,🎯 全球直连
- - DOMAIN-SUFFIX,googletagservices.com,🎯 全球直连
- - DOMAIN-SUFFIX,gtm.oasisfeng.com,🎯 全球直连
- - DOMAIN-SUFFIX,imasdk.googleapis.com,🎯 全球直连
- - DOMAIN-SUFFIX,mtalk.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,ocsp.pki.goog,🎯 全球直连
- - DOMAIN-SUFFIX,recaptcha.net,🎯 全球直连
- - DOMAIN-SUFFIX,safebrowsing-cache.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,safebrowsing.googleapis.com,🎯 全球直连
- - DOMAIN-SUFFIX,settings.crashlytics.com,🎯 全球直连
- - DOMAIN-SUFFIX,ssl-google-analytics.l.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,ssl.gstatic.com,🎯 全球直连
- - DOMAIN-SUFFIX,toolbarqueries.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,tools.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,tools.l.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,update.googleapis.com,🎯 全球直连
- - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,www.gstatic.com,🎯 全球直连
- - DOMAIN,csgo.wmsj.cn,🎯 全球直连
- - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
- - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
- - DOMAIN,dota2.wmsj.cn,🎯 全球直连
- - DOMAIN,st.dl.bscstorage.net,🎯 全球直连
- - DOMAIN,st.dl.eccdnx.com,🎯 全球直连
- - DOMAIN,st.dl.pinyuncloud.com,🎯 全球直连
- - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 全球直连
- - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
- - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
- - DOMAIN,wmsjsteam.com,🎯 全球直连
- - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
- - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
- - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
- - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
+ - DOMAIN,apple.comscoreresearch.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,akadns.net,🍎 苹果服务
+ - DOMAIN-SUFFIX,apple-cloudkit.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,apple.co,🍎 苹果服务
+ - DOMAIN-SUFFIX,apple.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,apple.com.cn,🍎 苹果服务
+ - DOMAIN-SUFFIX,apple.news,🍎 苹果服务
+ - DOMAIN-SUFFIX,appstore.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,cdn-apple.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,crashlytics.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,icloud-content.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,icloud.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,icloud.com.cn,🍎 苹果服务
+ - DOMAIN-SUFFIX,itunes.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,me.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,mzstatic.com,🍎 苹果服务
+ - IP-CIDR,17.0.0.0/8,🍎 苹果服务,no-resolve
+ - IP-CIDR,63.92.224.0/19,🍎 苹果服务,no-resolve
+ - IP-CIDR,65.199.22.0/23,🍎 苹果服务,no-resolve
+ - IP-CIDR,139.178.128.0/18,🍎 苹果服务,no-resolve
+ - IP-CIDR,144.178.0.0/19,🍎 苹果服务,no-resolve
+ - IP-CIDR,144.178.36.0/22,🍎 苹果服务,no-resolve
+ - IP-CIDR,144.178.48.0/20,🍎 苹果服务,no-resolve
+ - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
+ - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
+ - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
+ - DOMAIN-KEYWORD,youtube,📹 YouTube
+ - DOMAIN,youtubei.googleapis.com,📹 YouTube
+ - DOMAIN,yt3.ggpht.com,📹 YouTube
+ - DOMAIN-SUFFIX,googlevideo.com,📹 YouTube
+ - DOMAIN-SUFFIX,gvt2.com,📹 YouTube
+ - DOMAIN-SUFFIX,withyoutube.com,📹 YouTube
+ - DOMAIN-SUFFIX,youtu.be,📹 YouTube
+ - DOMAIN-SUFFIX,youtube-nocookie.com,📹 YouTube
+ - DOMAIN-SUFFIX,youtube.com,📹 YouTube
+ - DOMAIN-SUFFIX,youtubeeducation.com,📹 YouTube
+ - DOMAIN-SUFFIX,youtubegaming.com,📹 YouTube
+ - DOMAIN-SUFFIX,youtubekids.com,📹 YouTube
+ - DOMAIN-SUFFIX,yt.be,📹 YouTube
+ - DOMAIN-SUFFIX,ytimg.com,📹 YouTube
+ - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🎥 NETFLIX
+ - DOMAIN-KEYWORD,dualstack.apiproxy-,🎥 NETFLIX
+ - DOMAIN-KEYWORD,netflixdnstest,🎥 NETFLIX
+ - DOMAIN,netflix.com.edgesuite.net,🎥 NETFLIX
+ - DOMAIN-SUFFIX,fast.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflix.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflix.net,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest0.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest1.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest2.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest3.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest4.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest5.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest6.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest7.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest8.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,netflixdnstest9.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflxext.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflximg.com,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflximg.net,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflxso.net,🎥 NETFLIX
+ - DOMAIN-SUFFIX,nflxvideo.net,🎥 NETFLIX
+ - IP-CIDR,8.41.4.0/24,🎥 NETFLIX,no-resolve
+ - IP-CIDR,23.246.0.0/18,🎥 NETFLIX,no-resolve
+ - IP-CIDR,37.77.184.0/21,🎥 NETFLIX,no-resolve
+ - IP-CIDR,38.72.126.0/24,🎥 NETFLIX,no-resolve
+ - IP-CIDR,45.57.0.0/17,🎥 NETFLIX,no-resolve
+ - IP-CIDR,64.120.128.0/17,🎥 NETFLIX,no-resolve
+ - IP-CIDR,66.197.128.0/17,🎥 NETFLIX,no-resolve
+ - IP-CIDR,69.53.224.0/19,🎥 NETFLIX,no-resolve
+ - IP-CIDR,103.87.204.0/22,🎥 NETFLIX,no-resolve
+ - IP-CIDR,108.175.32.0/20,🎥 NETFLIX,no-resolve
+ - IP-CIDR,185.2.220.0/22,🎥 NETFLIX,no-resolve
+ - IP-CIDR,185.9.188.0/22,🎥 NETFLIX,no-resolve
+ - IP-CIDR,192.173.64.0/18,🎥 NETFLIX,no-resolve
+ - IP-CIDR,198.38.96.0/19,🎥 NETFLIX,no-resolve
+ - IP-CIDR,198.45.48.0/20,🎥 NETFLIX,no-resolve
+ - IP-CIDR,207.45.72.0/22,🎥 NETFLIX,no-resolve
+ - IP-CIDR,208.75.76.0/22,🎥 NETFLIX,no-resolve
+ - DOMAIN-KEYWORD,abematv.akamaized.net,💿 AbemaTV
+ - DOMAIN-SUFFIX,abema.io,💿 AbemaTV
+ - DOMAIN-SUFFIX,abema.tv,💿 AbemaTV
+ - DOMAIN-SUFFIX,ameba.jp,💿 AbemaTV
+ - DOMAIN-SUFFIX,hayabusa.io,💿 AbemaTV
+ - DOMAIN-SUFFIX,phncdn.com,🔞 Pornhub
+ - DOMAIN-SUFFIX,phprcdn.com,🔞 Pornhub
+ - DOMAIN-SUFFIX,pornhub.com,🔞 Pornhub
+ - DOMAIN-SUFFIX,pornhubpremium.com,🔞 Pornhub
+ - DOMAIN,cdn.registerdisney.go.com,🦄 DisneyPlus
+ - DOMAIN-SUFFIX,adobedtm.com,🦄 DisneyPlus
+ - DOMAIN-SUFFIX,bam.nr-data.net,🦄 DisneyPlus
+ - DOMAIN-SUFFIX,bamgrid.com,🦄 DisneyPlus
+ - DOMAIN-SUFFIX,braze.com,🦄 DisneyPlus
+ - DOMAIN-SUFFIX,cdn.optimizely.com,🦄 DisneyPlus
+ - DOMAIN-SUFFIX,cdn.registerdisney.go.com,🦄 DisneyPlus
+ - DOMAIN-SUFFIX,cws.conviva.com,🦄 DisneyPlus
+ - DOMAIN-SUFFIX,d9.flashtalking.com,🦄 DisneyPlus
+ - DOMAIN-SUFFIX,disney-plus.net,🦄 DisneyPlus
+ - DOMAIN-SUFFIX,disney-portal.my.onetrust.com,🦄 DisneyPlus
+ - DOMAIN-SUFFIX,disney.demdex.net,🦄 DisneyPlus
+ - DOMAIN-SUFFIX,disney.my.sentry.io,🦄 DisneyPlus
+ - DOMAIN-SUFFIX,disneyplus.bn5x.net,🦄 DisneyPlus
+ - DOMAIN-SUFFIX,disneyplus.com,🦄 DisneyPlus
+ - DOMAIN-SUFFIX,disneyplus.com.ssl.sc.omtrdc.net,🦄 DisneyPlus
+ - DOMAIN-SUFFIX,disneystreaming.com,🦄 DisneyPlus
+ - DOMAIN-SUFFIX,dssott.com,🦄 DisneyPlus
+ - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,🦄 DisneyPlus
+ - DOMAIN-SUFFIX,js-agent.newrelic.com,🦄 DisneyPlus
+ - DOMAIN-KEYWORD,-spotify-com,🎧 Spotify
+ - DOMAIN-KEYWORD,spotify.com,🎧 Spotify
+ - DOMAIN-SUFFIX,pscdn.co,🎧 Spotify
+ - DOMAIN-SUFFIX,scdn.co,🎧 Spotify
+ - DOMAIN-SUFFIX,spoti.fi,🎧 Spotify
+ - DOMAIN-SUFFIX,spotify.com,🎧 Spotify
+ - DOMAIN-SUFFIX,spotifycdn.com,🎧 Spotify
+ - DOMAIN-SUFFIX,spotifycdn.net,🎧 Spotify
+ - DOMAIN-KEYWORD,twitter,📷 Ins&FB&Twitter
+ - DOMAIN-SUFFIX,t.co,📷 Ins&FB&Twitter
+ - DOMAIN-SUFFIX,twimg.co,📷 Ins&FB&Twitter
+ - DOMAIN-SUFFIX,twimg.com,📷 Ins&FB&Twitter
+ - DOMAIN-SUFFIX,twimg.org,📷 Ins&FB&Twitter
+ - DOMAIN-KEYWORD,instagram,📷 Ins&FB&Twitter
+ - DOMAIN-SUFFIX,akamaihd.net,📷 Ins&FB&Twitter
+ - DOMAIN-SUFFIX,cdninstagram.com,📷 Ins&FB&Twitter
+ - DOMAIN-SUFFIX,instagr.am,📷 Ins&FB&Twitter
+ - DOMAIN-SUFFIX,instagram.com,📷 Ins&FB&Twitter
+ - DOMAIN-KEYWORD,facebook,📷 Ins&FB&Twitter
+ - DOMAIN-KEYWORD,fbcdn,📷 Ins&FB&Twitter
+ - DOMAIN-SUFFIX,facebook.com,📷 Ins&FB&Twitter
+ - DOMAIN-SUFFIX,fb.com,📷 Ins&FB&Twitter
+ - DOMAIN-SUFFIX,fb.me,📷 Ins&FB&Twitter
+ - DOMAIN-SUFFIX,fbcdn.com,📷 Ins&FB&Twitter
+ - DOMAIN-SUFFIX,fbcdn.net,📷 Ins&FB&Twitter
+ - IP-CIDR,31.13.24.0/21,📷 Ins&FB&Twitter,no-resolve
+ - IP-CIDR,31.13.64.0/18,📷 Ins&FB&Twitter,no-resolve
+ - IP-CIDR,45.64.40.0/22,📷 Ins&FB&Twitter,no-resolve
+ - IP-CIDR,66.220.144.0/20,📷 Ins&FB&Twitter,no-resolve
+ - IP-CIDR,69.63.176.0/20,📷 Ins&FB&Twitter,no-resolve
+ - IP-CIDR,69.171.224.0/19,📷 Ins&FB&Twitter,no-resolve
+ - IP-CIDR,74.119.76.0/22,📷 Ins&FB&Twitter,no-resolve
+ - IP-CIDR,103.4.96.0/22,📷 Ins&FB&Twitter,no-resolve
+ - IP-CIDR,129.134.0.0/17,📷 Ins&FB&Twitter,no-resolve
+ - IP-CIDR,157.240.0.0/17,📷 Ins&FB&Twitter,no-resolve
+ - IP-CIDR,173.252.64.0/18,📷 Ins&FB&Twitter,no-resolve
+ - IP-CIDR,179.60.192.0/22,📷 Ins&FB&Twitter,no-resolve
+ - IP-CIDR,185.60.216.0/22,📷 Ins&FB&Twitter,no-resolve
+ - IP-CIDR,204.15.20.0/22,📷 Ins&FB&Twitter,no-resolve
+ - DOMAIN-KEYWORD,-tiktokcdn-com,🎶 TikTok
+ - DOMAIN-SUFFIX,byteoversea.com,🎶 TikTok
+ - DOMAIN-SUFFIX,ibytedtos.com,🎶 TikTok
+ - DOMAIN-SUFFIX,ipstatp.com,🎶 TikTok
+ - DOMAIN-SUFFIX,muscdn.com,🎶 TikTok
+ - DOMAIN-SUFFIX,musical.ly,🎶 TikTok
+ - DOMAIN-SUFFIX,tik-tokapi.com,🎶 TikTok
+ - DOMAIN-SUFFIX,tiktok.com,🎶 TikTok
+ - DOMAIN-SUFFIX,tiktokcdn.com,🎶 TikTok
+ - DOMAIN-SUFFIX,tiktokv.com,🎶 TikTok
  - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
  - DOMAIN-KEYWORD,microsoft,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,aadrm.com,Ⓜ️ 微软服务
@@ -3090,33 +2026,44 @@ rules:
  - DOMAIN-SUFFIX,wunderlist.com,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,yammer.com,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
- - DOMAIN,apple.comscoreresearch.com,🍎 苹果服务
- - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
- - DOMAIN-SUFFIX,akadns.net,🍎 苹果服务
- - DOMAIN-SUFFIX,apple-cloudkit.com,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.co,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.com,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.com.cn,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.news,🍎 苹果服务
- - DOMAIN-SUFFIX,appstore.com,🍎 苹果服务
- - DOMAIN-SUFFIX,cdn-apple.com,🍎 苹果服务
- - DOMAIN-SUFFIX,crashlytics.com,🍎 苹果服务
- - DOMAIN-SUFFIX,icloud-content.com,🍎 苹果服务
- - DOMAIN-SUFFIX,icloud.com,🍎 苹果服务
- - DOMAIN-SUFFIX,icloud.com.cn,🍎 苹果服务
- - DOMAIN-SUFFIX,itunes.com,🍎 苹果服务
- - DOMAIN-SUFFIX,me.com,🍎 苹果服务
- - DOMAIN-SUFFIX,mzstatic.com,🍎 苹果服务
- - IP-CIDR,17.0.0.0/8,🍎 苹果服务,no-resolve
- - IP-CIDR,63.92.224.0/19,🍎 苹果服务,no-resolve
- - IP-CIDR,65.199.22.0/23,🍎 苹果服务,no-resolve
- - IP-CIDR,139.178.128.0/18,🍎 苹果服务,no-resolve
- - IP-CIDR,144.178.0.0/19,🍎 苹果服务,no-resolve
- - IP-CIDR,144.178.36.0/22,🍎 苹果服务,no-resolve
- - IP-CIDR,144.178.48.0/20,🍎 苹果服务,no-resolve
- - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
- - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
- - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
+ - DOMAIN,bahamut.akamaized.net,📺 巴哈姆特动画疯
+ - DOMAIN,gamer-cds.cdn.hinet.net,📺 巴哈姆特动画疯
+ - DOMAIN,gamer2-cds.cdn.hinet.net,📺 巴哈姆特动画疯
+ - DOMAIN-SUFFIX,bahamut.com.tw,📺 巴哈姆特动画疯
+ - DOMAIN-SUFFIX,gamer.com.tw,📺 巴哈姆特动画疯
+ - DOMAIN,p-bstarstatic.akamaized.net,🅱️️ 哔哩哔哩港澳台
+ - DOMAIN,p.bstarstatic.com,🅱️️ 哔哩哔哩港澳台
+ - DOMAIN,upos-bstar-mirrorakam.akamaized.net,🅱️️ 哔哩哔哩港澳台
+ - DOMAIN,upos-bstar1-mirrorakam.akamaized.net,🅱️️ 哔哩哔哩港澳台
+ - DOMAIN,upos-hz-mirrorakam.akamaized.net,🅱️️ 哔哩哔哩港澳台
+ - DOMAIN-SUFFIX,acgvideo.com,🅱️️ 哔哩哔哩港澳台
+ - DOMAIN-SUFFIX,bilibili.com,🅱️️ 哔哩哔哩港澳台
+ - DOMAIN-SUFFIX,bilibili.tv,🅱️️ 哔哩哔哩港澳台
+ - IP-CIDR,45.43.32.234/32,🅱️️ 哔哩哔哩港澳台
+ - IP-CIDR,119.29.29.29/32,🅱️️ 哔哩哔哩港澳台
+ - IP-CIDR,128.1.62.200/32,🅱️️ 哔哩哔哩港澳台
+ - IP-CIDR,128.1.62.201/32,🅱️️ 哔哩哔哩港澳台
+ - IP-CIDR,150.116.92.250/32,🅱️️ 哔哩哔哩港澳台
+ - IP-CIDR,164.52.76.18/32,🅱️️ 哔哩哔哩港澳台
+ - IP-CIDR,203.107.1.33/32,🅱️️ 哔哩哔哩港澳台
+ - IP-CIDR,203.107.1.34/32,🅱️️ 哔哩哔哩港澳台
+ - IP-CIDR,203.107.1.65/32,🅱️️ 哔哩哔哩港澳台
+ - IP-CIDR,203.107.1.66/32,🅱️️ 哔哩哔哩港澳台
+ - DOMAIN-SUFFIX,embyclub.net,🎬 猫熊Emby
+ - DOMAIN-SUFFIX,embyclub.com,🎬 猫熊Emby
+ - DOMAIN-SUFFIX,embyclub.org,🎬 猫熊Emby
+ - DOMAIN-SUFFIX,embyclub.media,🎬 猫熊Emby
+ - DOMAIN-SUFFIX,猫熊.club,🎬 猫熊Emby
+ - DOMAIN-SUFFIX,embyclub.maoxiong.cloud,🎬 猫熊Emby
+ - DOMAIN-SUFFIX,maoxiong.cloud,🎬 猫熊Emby
+ - DOMAIN-SUFFIX,embyclub2.maoxiong.cloud,🎬 猫熊Emby
+ - DOMAIN-SUFFIX,haodream.org,🎬 猫熊Emby
+ - DOMAIN-KEYWORD,emby,🎬 猫熊Emby
+ - DOMAIN-KEYWORD,pornemby,🎬 猫熊Emby
+ - DOMAIN-SUFFIX,xn--2vxr8a.club,🎬 猫熊Emby
+ - DOMAIN-SUFFIX,pornemby.maoxiong.cloud,🎬 猫熊Emby
+ - IP-CIDR,142.54.186.202/16,🎬 猫熊Emby,no-resolve
+ - DOMAIN-KEYWORD,telegram,📲 电报信息
  - DOMAIN-SUFFIX,t.me,📲 电报信息
  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
  - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
@@ -3129,696 +2076,468 @@ rules:
  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
- - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
- - DOMAIN-SUFFIX,go.com,🌍 国外媒体
- - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
- - DOMAIN-SUFFIX,abema.io,🌍 国外媒体
- - DOMAIN-SUFFIX,abema.tv,🌍 国外媒体
- - DOMAIN-SUFFIX,ameba.jp,🌍 国外媒体
- - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
- - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
- - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
- - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
- - DOMAIN,atv-ps.amazon.com,🌍 国外媒体
- - DOMAIN,avodmp4s3ww-a.akamaihd.net,🌍 国外媒体
- - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,🌍 国外媒体
- - DOMAIN,d1xfray82862hr.cloudfront.net,🌍 国外媒体
- - DOMAIN,d22qjgkvxw22r6.cloudfront.net,🌍 国外媒体
- - DOMAIN,d25xi40x97liuc.cloudfront.net,🌍 国外媒体
- - DOMAIN,d27xxe7juh1us6.cloudfront.net,🌍 国外媒体
- - DOMAIN,d3196yreox78o9.cloudfront.net,🌍 国外媒体
- - DOMAIN,dmqdd6hw24ucf.cloudfront.net,🌍 国外媒体
- - DOMAIN,ktpx.amazon.com,🌍 国外媒体
- - DOMAIN-SUFFIX,aboutamazon.com,🌍 国外媒体
- - DOMAIN-SUFFIX,aiv-cdn.net,🌍 国外媒体
- - DOMAIN-SUFFIX,aiv-delivery.net,🌍 国外媒体
- - DOMAIN-SUFFIX,amazon.jobs,🌍 国外媒体
- - DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
- - DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
- - DOMAIN-SUFFIX,pv-cdn.net,🌍 国外媒体
- - DOMAIN,gspe1-ssl.ls.apple.com,🌍 国外媒体
- - DOMAIN,np-edge.itunes.apple.com,🌍 国外媒体
- - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
- - DOMAIN-SUFFIX,tv.apple.com,🌍 国外媒体
- - DOMAIN-KEYWORD,bbcfmt,🌍 国外媒体
- - DOMAIN-KEYWORD,uk-live,🌍 国外媒体
- - DOMAIN,aod-dash-uk-live.akamaized.net,🌍 国外媒体
- - DOMAIN,aod-hls-uk-live.akamaized.net,🌍 国外媒体
- - DOMAIN,vod-dash-uk-live.akamaized.net,🌍 国外媒体
- - DOMAIN,vod-thumb-uk-live.akamaized.net,🌍 国外媒体
- - DOMAIN-SUFFIX,bbc.co,🌍 国外媒体
- - DOMAIN-SUFFIX,bbc.co.uk,🌍 国外媒体
- - DOMAIN-SUFFIX,bbc.com,🌍 国外媒体
- - DOMAIN-SUFFIX,bbc.net.uk,🌍 国外媒体
- - DOMAIN-SUFFIX,bbcfmt.hs.llnwd.net,🌍 国外媒体
- - DOMAIN-SUFFIX,bbci.co,🌍 国外媒体
- - DOMAIN-SUFFIX,bbci.co.uk,🌍 国外媒体
- - DOMAIN-SUFFIX,bidi.net.uk,🌍 国外媒体
- - DOMAIN,bahamut.akamaized.net,🌍 国外媒体
- - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
- - DOMAIN,gamer2-cds.cdn.hinet.net,🌍 国外媒体
- - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
- - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
- - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
- - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
- - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
- - DOMAIN-SUFFIX,d1sgwhnao7452x.cloudfront.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dazn-api.com,🌍 国外媒体
- - DOMAIN-SUFFIX,dazn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,dazndn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🌍 国外媒体
- - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
- - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
- - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
- - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
- - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
- - DOMAIN-SUFFIX,adobedtm.com,🌍 国外媒体
- - DOMAIN-SUFFIX,bam.nr-data.net,🌍 国外媒体
- - DOMAIN-SUFFIX,bamgrid.com,🌍 国外媒体
- - DOMAIN-SUFFIX,braze.com,🌍 国外媒体
- - DOMAIN-SUFFIX,cdn.optimizely.com,🌍 国外媒体
- - DOMAIN-SUFFIX,cdn.registerdisney.go.com,🌍 国外媒体
- - DOMAIN-SUFFIX,cws.conviva.com,🌍 国外媒体
- - DOMAIN-SUFFIX,d9.flashtalking.com,🌍 国外媒体
- - DOMAIN-SUFFIX,disney-plus.net,🌍 国外媒体
- - DOMAIN-SUFFIX,disney-portal.my.onetrust.com,🌍 国外媒体
- - DOMAIN-SUFFIX,disney.demdex.net,🌍 国外媒体
- - DOMAIN-SUFFIX,disney.my.sentry.io,🌍 国外媒体
- - DOMAIN-SUFFIX,disneyplus.bn5x.net,🌍 国外媒体
- - DOMAIN-SUFFIX,disneyplus.com,🌍 国外媒体
- - DOMAIN-SUFFIX,disneyplus.com.ssl.sc.omtrdc.net,🌍 国外媒体
- - DOMAIN-SUFFIX,disneystreaming.com,🌍 国外媒体
- - DOMAIN-SUFFIX,dssott.com,🌍 国外媒体
- - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,🌍 国外媒体
- - DOMAIN-SUFFIX,js-agent.newrelic.com,🌍 国外媒体
- - DOMAIN,bcbolt446c5271-a.akamaihd.net,🌍 国外媒体
- - DOMAIN,content.jwplatform.com,🌍 国外媒体
- - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
- - DOMAIN,videos-f.jwpsrv.com,🌍 国外媒体
- - DOMAIN-SUFFIX,encoretvb.com,🌍 国外媒体
- - DOMAIN-SUFFIX,fox.com,🌍 国外媒体
- - DOMAIN-SUFFIX,foxdcg.com,🌍 国外媒体
- - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
- - DOMAIN-KEYWORD,.hbogoasia.,🌍 国外媒体
- - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
- - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
- - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
- - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
- - DOMAIN,dai3fd1oh325y.cloudfront.net,🌍 国外媒体
- - DOMAIN,hboasia1-i.akamaihd.net,🌍 国外媒体
- - DOMAIN,hboasia2-i.akamaihd.net,🌍 国外媒体
- - DOMAIN,hboasia3-i.akamaihd.net,🌍 国外媒体
- - DOMAIN,hboasia4-i.akamaihd.net,🌍 国外媒体
- - DOMAIN,hboasia5-i.akamaihd.net,🌍 国外媒体
- - DOMAIN,hboasialive.akamaized.net,🌍 国外媒体
- - DOMAIN,hbogoprod-vod.akamaized.net,🌍 国外媒体
- - DOMAIN,hbolb.onwardsmg.com,🌍 国外媒体
- - DOMAIN,hbounify-prod.evergent.com,🌍 国外媒体
- - DOMAIN,players.brightcove.net,🌍 国外媒体
- - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hboasia.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
- - DOMAIN-SUFFIX,5itv.tv,🌍 国外媒体
- - DOMAIN-SUFFIX,ocnttv.com,🌍 国外媒体
- - DOMAIN-SUFFIX,cws-hulu.conviva.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hulu.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hulu.hb.omtrdc.net,🌍 国外媒体
- - DOMAIN-SUFFIX,hulu.sc.omtrdc.net,🌍 国外媒体
- - DOMAIN-SUFFIX,huluad.com,🌍 国外媒体
- - DOMAIN-SUFFIX,huluim.com,🌍 国外媒体
- - DOMAIN-SUFFIX,hulustream.com,🌍 国外媒体
- - DOMAIN-SUFFIX,happyon.jp,🌍 国外媒体
- - DOMAIN-SUFFIX,hjholdings.jp,🌍 国外媒体
- - DOMAIN-SUFFIX,hulu.jp,🌍 国外媒体
- - DOMAIN-SUFFIX,prod.hjholdings.tv,🌍 国外媒体
- - DOMAIN-SUFFIX,streaks.jp,🌍 国外媒体
- - DOMAIN-SUFFIX,yb.uncn.jp,🌍 国外媒体
- - DOMAIN,itvpnpmobile-a.akamaihd.net,🌍 国外媒体
- - DOMAIN-SUFFIX,itv.com,🌍 国外媒体
- - DOMAIN-SUFFIX,itvstatic.com,🌍 国外媒体
- - DOMAIN-KEYWORD,jooxweb-api,🌍 国外媒体
- - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
- - DOMAIN-KEYWORD,japonx,🌍 国外媒体
- - DOMAIN-KEYWORD,japronx,🌍 国外媒体
- - DOMAIN-SUFFIX,japonx.com,🌍 国外媒体
- - DOMAIN-SUFFIX,japonx.net,🌍 国外媒体
- - DOMAIN-SUFFIX,japonx.tv,🌍 国外媒体
- - DOMAIN-SUFFIX,japonx.vip,🌍 国外媒体
- - DOMAIN-SUFFIX,japronx.com,🌍 国外媒体
- - DOMAIN-SUFFIX,japronx.net,🌍 国外媒体
- - DOMAIN-SUFFIX,japronx.tv,🌍 国外媒体
- - DOMAIN-SUFFIX,japronx.vip,🌍 国外媒体
- - DOMAIN-SUFFIX,kfs.io,🌍 国外媒体
- - DOMAIN-SUFFIX,kkbox.com,🌍 国外媒体
- - DOMAIN-SUFFIX,kkbox.com.tw,🌍 国外媒体
- - DOMAIN,kktv-theater.kk.stream,🌍 国外媒体
- - DOMAIN-SUFFIX,kktv.com.tw,🌍 国外媒体
- - DOMAIN-SUFFIX,kktv.me,🌍 国外媒体
- - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍 国外媒体
- - DOMAIN-SUFFIX,litv.tv,🌍 国外媒体
- - DOMAIN,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
- - DOMAIN-SUFFIX,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
- - DOMAIN-SUFFIX,linetv.tw,🌍 国外媒体
- - DOMAIN-SUFFIX,profile.line-scdn.net,🌍 国外媒体
- - DOMAIN,d349g9zuie06uo.cloudfront.net,🌍 国外媒体
- - DOMAIN-SUFFIX,channel5.com,🌍 国外媒体
- - DOMAIN-SUFFIX,my5.tv,🌍 国外媒体
- - DOMAIN-KEYWORD,nowtv100,🌍 国外媒体
- - DOMAIN-KEYWORD,rthklive,🌍 国外媒体
- - DOMAIN,mytvsuperlimited.hb.omtrdc.net,🌍 国外媒体
- - DOMAIN,mytvsuperlimited.sc.omtrdc.net,🌍 国外媒体
- - DOMAIN-SUFFIX,mytvsuper.com,🌍 国外媒体
- - DOMAIN-SUFFIX,tvb.com,🌍 国外媒体
- - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🌍 国外媒体
- - DOMAIN-KEYWORD,dualstack.apiproxy-,🌍 国外媒体
- - DOMAIN-KEYWORD,netflixdnstest,🌍 国外媒体
- - DOMAIN,netflix.com.edgesuite.net,🌍 国外媒体
- - DOMAIN-SUFFIX,fast.com,🌍 国外媒体
- - DOMAIN-SUFFIX,netflix.com,🌍 国外媒体
- - DOMAIN-SUFFIX,netflix.net,🌍 国外媒体
- - DOMAIN-SUFFIX,netflixdnstest0.com,🌍 国外媒体
- - DOMAIN-SUFFIX,netflixdnstest1.com,🌍 国外媒体
- - DOMAIN-SUFFIX,netflixdnstest2.com,🌍 国外媒体
- - DOMAIN-SUFFIX,netflixdnstest3.com,🌍 国外媒体
- - DOMAIN-SUFFIX,netflixdnstest4.com,🌍 国外媒体
- - DOMAIN-SUFFIX,netflixdnstest5.com,🌍 国外媒体
- - DOMAIN-SUFFIX,netflixdnstest6.com,🌍 国外媒体
- - DOMAIN-SUFFIX,netflixdnstest7.com,🌍 国外媒体
- - DOMAIN-SUFFIX,netflixdnstest8.com,🌍 国外媒体
- - DOMAIN-SUFFIX,netflixdnstest9.com,🌍 国外媒体
- - DOMAIN-SUFFIX,nflxext.com,🌍 国外媒体
- - DOMAIN-SUFFIX,nflximg.com,🌍 国外媒体
- - DOMAIN-SUFFIX,nflximg.net,🌍 国外媒体
- - DOMAIN-SUFFIX,nflxso.net,🌍 国外媒体
- - DOMAIN-SUFFIX,nflxvideo.net,🌍 国外媒体
- - IP-CIDR,8.41.4.0/24,🌍 国外媒体,no-resolve
- - IP-CIDR,23.246.0.0/18,🌍 国外媒体,no-resolve
- - IP-CIDR,37.77.184.0/21,🌍 国外媒体,no-resolve
- - IP-CIDR,38.72.126.0/24,🌍 国外媒体,no-resolve
- - IP-CIDR,45.57.0.0/17,🌍 国外媒体,no-resolve
- - IP-CIDR,64.120.128.0/17,🌍 国外媒体,no-resolve
- - IP-CIDR,66.197.128.0/17,🌍 国外媒体,no-resolve
- - IP-CIDR,69.53.224.0/19,🌍 国外媒体,no-resolve
- - IP-CIDR,103.87.204.0/22,🌍 国外媒体,no-resolve
- - IP-CIDR,108.175.32.0/20,🌍 国外媒体,no-resolve
- - IP-CIDR,185.2.220.0/22,🌍 国外媒体,no-resolve
- - IP-CIDR,185.9.188.0/22,🌍 国外媒体,no-resolve
- - IP-CIDR,192.173.64.0/18,🌍 国外媒体,no-resolve
- - IP-CIDR,198.38.96.0/19,🌍 国外媒体,no-resolve
- - IP-CIDR,198.45.48.0/20,🌍 国外媒体,no-resolve
- - IP-CIDR,207.45.72.0/22,🌍 国外媒体,no-resolve
- - IP-CIDR,208.75.76.0/22,🌍 国外媒体,no-resolve
- - DOMAIN-SUFFIX,dmc.nico,🌍 国外媒体
- - DOMAIN-SUFFIX,nicovideo.jp,🌍 国外媒体
- - DOMAIN-SUFFIX,nimg.jp,🌍 国外媒体
- - DOMAIN-SUFFIX,pbs.org,🌍 国外媒体
- - DOMAIN-SUFFIX,pandora.com,🌍 国外媒体
- - DOMAIN-SUFFIX,phncdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,phprcdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,pornhub.com,🌍 国外媒体
- - DOMAIN-SUFFIX,pornhubpremium.com,🌍 国外媒体
- - DOMAIN-SUFFIX,qobuz.com,🌍 国外媒体
- - DOMAIN-SUFFIX,p-cdn.us,🌍 国外媒体
- - DOMAIN-SUFFIX,sndcdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,soundcloud.com,🌍 国外媒体
- - DOMAIN-KEYWORD,-spotify-com,🌍 国外媒体
- - DOMAIN-KEYWORD,spotify.com,🌍 国外媒体
- - DOMAIN-SUFFIX,pscdn.co,🌍 国外媒体
- - DOMAIN-SUFFIX,scdn.co,🌍 国外媒体
- - DOMAIN-SUFFIX,spoti.fi,🌍 国外媒体
- - DOMAIN-SUFFIX,spotify.com,🌍 国外媒体
- - DOMAIN-SUFFIX,spotifycdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,spotifycdn.net,🌍 国外媒体
- - DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com,🌍 国外媒体
- - DOMAIN-SUFFIX,tidal.com,🌍 国外媒体
- - DOMAIN-SUFFIX,tidalhifi.com,🌍 国外媒体
- - DOMAIN,hamifans.emome.net,🌍 国外媒体
- - DOMAIN-SUFFIX,skyking.com.tw,🌍 国外媒体
- - DOMAIN-KEYWORD,tiktokcdn-,🌍 国外媒体
- - DOMAIN-SUFFIX,byteoversea.com,🌍 国外媒体
- - DOMAIN-SUFFIX,ibytedtos.com,🌍 国外媒体
- - DOMAIN-SUFFIX,ipstatp.com,🌍 国外媒体
- - DOMAIN-SUFFIX,muscdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,musical.ly,🌍 国外媒体
- - DOMAIN-SUFFIX,tik-tokapi.com,🌍 国外媒体
- - DOMAIN-SUFFIX,tiktok.com,🌍 国外媒体
- - DOMAIN-SUFFIX,tiktokcdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,tiktokv.com,🌍 国外媒体
- - DOMAIN-KEYWORD,ttvnw,🌍 国外媒体
- - DOMAIN-SUFFIX,ext-twitch.tv,🌍 国外媒体
- - DOMAIN-SUFFIX,jtvnw.net,🌍 国外媒体
- - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
- - DOMAIN-SUFFIX,twitch-ext.rootonline.de,🌍 国外媒体
- - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
- - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
- - DOMAIN,api.viu.now.com,🌍 国外媒体
- - DOMAIN,d1k2us671qcoau.cloudfront.net,🌍 国外媒体
- - DOMAIN,d2anahhhmp1ffz.cloudfront.net,🌍 国外媒体
- - DOMAIN,dfp6rglgjqszk.cloudfront.net,🌍 国外媒体
- - DOMAIN-SUFFIX,bootstrapcdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,cloudfront.net,🌍 国外媒体
- - DOMAIN-SUFFIX,cognito-identity.us-east-1.amazonaws.com,🌍 国外媒体
- - DOMAIN-SUFFIX,firebaseio.com,🌍 国外媒体
- - DOMAIN-SUFFIX,jwpcdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,jwplayer.com,🌍 国外媒体
- - DOMAIN-SUFFIX,mobileanalytics.us-east-1.amazonaws.com,🌍 国外媒体
- - DOMAIN-SUFFIX,nowe.com,🌍 国外媒体
- - DOMAIN-SUFFIX,viu.com,🌍 国外媒体
- - DOMAIN-SUFFIX,viu.now.com,🌍 国外媒体
- - DOMAIN-SUFFIX,viu.tv,🌍 国外媒体
- - DOMAIN-KEYWORD,youtube,🌍 国外媒体
- - DOMAIN,youtubei.googleapis.com,🌍 国外媒体
- - DOMAIN,yt3.ggpht.com,🌍 国外媒体
- - DOMAIN-SUFFIX,googlevideo.com,🌍 国外媒体
- - DOMAIN-SUFFIX,gvt2.com,🌍 国外媒体
- - DOMAIN-SUFFIX,withyoutube.com,🌍 国外媒体
- - DOMAIN-SUFFIX,youtu.be,🌍 国外媒体
- - DOMAIN-SUFFIX,youtube-nocookie.com,🌍 国外媒体
- - DOMAIN-SUFFIX,youtube.com,🌍 国外媒体
- - DOMAIN-SUFFIX,youtubeeducation.com,🌍 国外媒体
- - DOMAIN-SUFFIX,youtubegaming.com,🌍 国外媒体
- - DOMAIN-SUFFIX,youtubekids.com,🌍 国外媒体
- - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
- - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
- - DOMAIN,music.youtube.com,🌍 国外媒体
- - DOMAIN-SUFFIX,1password.com,🚀 节点选择
- - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
- - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
- - DOMAIN-SUFFIX,btlibrary.me,🚀 节点选择
- - DOMAIN-SUFFIX,cccat.io,🚀 节点选择
- - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
- - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
- - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
- - DOMAIN-SUFFIX,garena.com,🚀 节点选择
- - DOMAIN-SUFFIX,hoyolab.com,🚀 节点选择
- - DOMAIN-SUFFIX,inoreader.com,🚀 节点选择
- - DOMAIN-SUFFIX,ip138.com,🚀 节点选择
- - DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
- - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
- - DOMAIN-SUFFIX,notion.so,🚀 节点选择
- - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
- - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
- - DOMAIN-SUFFIX,teddysun.com,🚀 节点选择
- - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
- - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
- - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
- - DOMAIN-SUFFIX,eu,🚀 节点选择
- - DOMAIN-SUFFIX,hk,🚀 节点选择
- - DOMAIN-SUFFIX,jp,🚀 节点选择
- - DOMAIN-SUFFIX,kr,🚀 节点选择
- - DOMAIN-SUFFIX,sg,🚀 节点选择
- - DOMAIN-SUFFIX,tw,🚀 节点选择
- - DOMAIN-SUFFIX,uk,🚀 节点选择
- - DOMAIN-SUFFIX,us,🚀 节点选择
- - DOMAIN-KEYWORD,1e100,🚀 节点选择
- - DOMAIN-KEYWORD,abema,🚀 节点选择
- - DOMAIN-KEYWORD,appledaily,🚀 节点选择
- - DOMAIN-KEYWORD,avtb,🚀 节点选择
- - DOMAIN-KEYWORD,beetalk,🚀 节点选择
- - DOMAIN-KEYWORD,blogspot,🚀 节点选择
- - DOMAIN-KEYWORD,dropbox,🚀 节点选择
- - DOMAIN-KEYWORD,facebook,🚀 节点选择
- - DOMAIN-KEYWORD,fbcdn,🚀 节点选择
- - DOMAIN-KEYWORD,github,🚀 节点选择
- - DOMAIN-KEYWORD,gmail,🚀 节点选择
- - DOMAIN-KEYWORD,google,🚀 节点选择
- - DOMAIN-KEYWORD,instagram,🚀 节点选择
- - DOMAIN-KEYWORD,porn,🚀 节点选择
- - DOMAIN-KEYWORD,sci-hub,🚀 节点选择
- - DOMAIN-KEYWORD,spotify,🚀 节点选择
- - DOMAIN-KEYWORD,telegram,🚀 节点选择
- - DOMAIN-KEYWORD,twitter,🚀 节点选择
- - DOMAIN-KEYWORD,whatsapp,🚀 节点选择
- - DOMAIN-KEYWORD,youtube,🚀 节点选择
- - DOMAIN-SUFFIX,4sqi.net,🚀 节点选择
- - DOMAIN-SUFFIX,a248.e.akamai.net,🚀 节点选择
- - DOMAIN-SUFFIX,adobedtm.com,🚀 节点选择
- - DOMAIN-SUFFIX,ampproject.org,🚀 节点选择
- - DOMAIN-SUFFIX,android.com,🚀 节点选择
- - DOMAIN-SUFFIX,aolcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,apkmirror.com,🚀 节点选择
- - DOMAIN-SUFFIX,apkpure.com,🚀 节点选择
- - DOMAIN-SUFFIX,app-measurement.com,🚀 节点选择
- - DOMAIN-SUFFIX,appspot.com,🚀 节点选择
- - DOMAIN-SUFFIX,archive.org,🚀 节点选择
- - DOMAIN-SUFFIX,armorgames.com,🚀 节点选择
- - DOMAIN-SUFFIX,aspnetcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,awsstatic.com,🚀 节点选择
- - DOMAIN-SUFFIX,azureedge.net,🚀 节点选择
- - DOMAIN-SUFFIX,azurewebsites.net,🚀 节点选择
- - DOMAIN-SUFFIX,bandwagonhost.com,🚀 节点选择
- - DOMAIN-SUFFIX,bing.com,🚀 节点选择
- - DOMAIN-SUFFIX,bkrtx.com,🚀 节点选择
- - DOMAIN-SUFFIX,blogcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,blogger.com,🚀 节点选择
- - DOMAIN-SUFFIX,blogsmithmedia.com,🚀 节点选择
- - DOMAIN-SUFFIX,blogspot.com,🚀 节点选择
- - DOMAIN-SUFFIX,blogspot.hk,🚀 节点选择
- - DOMAIN-SUFFIX,blogspot.jp,🚀 节点选择
- - DOMAIN-SUFFIX,bloomberg.cn,🚀 节点选择
- - DOMAIN-SUFFIX,bloomberg.com,🚀 节点选择
- - DOMAIN-SUFFIX,box.com,🚀 节点选择
- - DOMAIN-SUFFIX,cachefly.net,🚀 节点选择
- - DOMAIN-SUFFIX,cdnst.net,🚀 节点选择
- - DOMAIN-SUFFIX,cloudfront.net,🚀 节点选择
- - DOMAIN-SUFFIX,comodoca.com,🚀 节点选择
- - DOMAIN-SUFFIX,daum.net,🚀 节点选择
- - DOMAIN-SUFFIX,demdex.net,🚀 节点选择
- - DOMAIN-SUFFIX,deskconnect.com,🚀 节点选择
- - DOMAIN-SUFFIX,disqus.com,🚀 节点选择
- - DOMAIN-SUFFIX,disquscdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,dropbox.com,🚀 节点选择
- - DOMAIN-SUFFIX,dropboxapi.com,🚀 节点选择
- - DOMAIN-SUFFIX,dropboxstatic.com,🚀 节点选择
- - DOMAIN-SUFFIX,dropboxusercontent.com,🚀 节点选择
- - DOMAIN-SUFFIX,duckduckgo.com,🚀 节点选择
- - DOMAIN-SUFFIX,edgecastcdn.net,🚀 节点选择
- - DOMAIN-SUFFIX,edgekey.net,🚀 节点选择
- - DOMAIN-SUFFIX,edgesuite.net,🚀 节点选择
- - DOMAIN-SUFFIX,eurekavpt.com,🚀 节点选择
- - DOMAIN-SUFFIX,fastmail.com,🚀 节点选择
- - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
- - DOMAIN-SUFFIX,flickr.com,🚀 节点选择
- - DOMAIN-SUFFIX,flipboard.com,🚀 节点选择
- - DOMAIN-SUFFIX,gfx.ms,🚀 节点选择
- - DOMAIN-SUFFIX,gongm.in,🚀 节点选择
- - DOMAIN-SUFFIX,hulu.com,🚀 节点选择
- - DOMAIN-SUFFIX,id.heroku.com,🚀 节点选择
- - DOMAIN-SUFFIX,io.io,🚀 节点选择
- - DOMAIN-SUFFIX,issuu.com,🚀 节点选择
- - DOMAIN-SUFFIX,ixquick.com,🚀 节点选择
- - DOMAIN-SUFFIX,jtvnw.net,🚀 节点选择
- - DOMAIN-SUFFIX,kat.cr,🚀 节点选择
- - DOMAIN-SUFFIX,kik.com,🚀 节点选择
- - DOMAIN-SUFFIX,kobo.com,🚀 节点选择
- - DOMAIN-SUFFIX,kobobooks.com,🚀 节点选择
- - DOMAIN-SUFFIX,licdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,live.net,🚀 节点选择
- - DOMAIN-SUFFIX,livefilestore.com,🚀 节点选择
- - DOMAIN-SUFFIX,llnwd.net,🚀 节点选择
- - DOMAIN-SUFFIX,macrumors.com,🚀 节点选择
- - DOMAIN-SUFFIX,medium.com,🚀 节点选择
- - DOMAIN-SUFFIX,mega.nz,🚀 节点选择
- - DOMAIN-SUFFIX,megaupload.com,🚀 节点选择
- - DOMAIN-SUFFIX,messenger.com,🚀 节点选择
- - DOMAIN-SUFFIX,netdna-cdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,nintendo.net,🚀 节点选择
- - DOMAIN-SUFFIX,nsstatic.net,🚀 节点选择
- - DOMAIN-SUFFIX,nytstyle.com,🚀 节点选择
- - DOMAIN-SUFFIX,overcast.fm,🚀 节点选择
- - DOMAIN-SUFFIX,openvpn.net,🚀 节点选择
- - DOMAIN-SUFFIX,periscope.tv,🚀 节点选择
- - DOMAIN-SUFFIX,pinimg.com,🚀 节点选择
- - DOMAIN-SUFFIX,pinterest.com,🚀 节点选择
- - DOMAIN-SUFFIX,potato.im,🚀 节点选择
- - DOMAIN-SUFFIX,prfct.co,🚀 节点选择
- - DOMAIN-SUFFIX,pscp.tv,🚀 节点选择
- - DOMAIN-SUFFIX,quora.com,🚀 节点选择
- - DOMAIN-SUFFIX,resilio.com,🚀 节点选择
- - DOMAIN-SUFFIX,sfx.ms,🚀 节点选择
- - DOMAIN-SUFFIX,shadowsocks.org,🚀 节点选择
- - DOMAIN-SUFFIX,slack-edge.com,🚀 节点选择
- - DOMAIN-SUFFIX,smartdnsproxy.com,🚀 节点选择
- - DOMAIN-SUFFIX,sndcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,soundcloud.com,🚀 节点选择
- - DOMAIN-SUFFIX,startpage.com,🚀 节点选择
- - DOMAIN-SUFFIX,staticflickr.com,🚀 节点选择
- - DOMAIN-SUFFIX,symauth.com,🚀 节点选择
- - DOMAIN-SUFFIX,symcb.com,🚀 节点选择
- - DOMAIN-SUFFIX,symcd.com,🚀 节点选择
- - DOMAIN-SUFFIX,textnow.com,🚀 节点选择
- - DOMAIN-SUFFIX,textnow.me,🚀 节点选择
- - DOMAIN-SUFFIX,thefacebook.com,🚀 节点选择
- - DOMAIN-SUFFIX,thepiratebay.org,🚀 节点选择
- - DOMAIN-SUFFIX,torproject.org,🚀 节点选择
- - DOMAIN-SUFFIX,trustasiassl.com,🚀 节点选择
- - DOMAIN-SUFFIX,tumblr.co,🚀 节点选择
- - DOMAIN-SUFFIX,tumblr.com,🚀 节点选择
- - DOMAIN-SUFFIX,tvb.com,🚀 节点选择
- - DOMAIN-SUFFIX,txmblr.com,🚀 节点选择
- - DOMAIN-SUFFIX,v2ex.com,🚀 节点选择
- - DOMAIN-SUFFIX,vimeo.com,🚀 节点选择
- - DOMAIN-SUFFIX,vine.co,🚀 节点选择
- - DOMAIN-SUFFIX,vox-cdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,amazon.co.jp,🚀 节点选择
- - DOMAIN-SUFFIX,amazon.com,🚀 节点选择
- - DOMAIN-SUFFIX,amazonaws.com,🚀 节点选择
- - IP-CIDR,13.32.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,13.35.0.0/17,🚀 节点选择,no-resolve
- - IP-CIDR,18.184.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,18.194.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,18.208.0.0/13,🚀 节点选择,no-resolve
- - IP-CIDR,18.232.0.0/14,🚀 节点选择,no-resolve
- - IP-CIDR,52.58.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,52.74.0.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,52.77.0.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,52.84.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,52.200.0.0/13,🚀 节点选择,no-resolve
- - IP-CIDR,54.93.0.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,54.156.0.0/14,🚀 节点选择,no-resolve
- - IP-CIDR,54.226.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,54.230.156.0/22,🚀 节点选择,no-resolve
- - DOMAIN-KEYWORD,uk-live,🚀 节点选择
- - DOMAIN-SUFFIX,bbc.co,🚀 节点选择
- - DOMAIN-SUFFIX,bbc.com,🚀 节点选择
- - DOMAIN-SUFFIX,apache.org,🚀 节点选择
- - DOMAIN-SUFFIX,docker.com,🚀 节点选择
- - DOMAIN-SUFFIX,elastic.co,🚀 节点选择
- - DOMAIN-SUFFIX,elastic.com,🚀 节点选择
- - DOMAIN-SUFFIX,gcr.io,🚀 节点选择
- - DOMAIN-SUFFIX,gitlab.com,🚀 节点选择
- - DOMAIN-SUFFIX,gitlab.io,🚀 节点选择
- - DOMAIN-SUFFIX,jitpack.io,🚀 节点选择
- - DOMAIN-SUFFIX,maven.org,🚀 节点选择
- - DOMAIN-SUFFIX,medium.com,🚀 节点选择
- - DOMAIN-SUFFIX,mvnrepository.com,🚀 节点选择
- - DOMAIN-SUFFIX,quay.io,🚀 节点选择
- - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
- - DOMAIN-SUFFIX,redhat.com,🚀 节点选择
- - DOMAIN-SUFFIX,sonatype.org,🚀 节点选择
- - DOMAIN-SUFFIX,sourcegraph.com,🚀 节点选择
- - DOMAIN-SUFFIX,spring.io,🚀 节点选择
- - DOMAIN-SUFFIX,spring.net,🚀 节点选择
- - DOMAIN-SUFFIX,stackoverflow.com,🚀 节点选择
- - DOMAIN-SUFFIX,discord.co,🚀 节点选择
- - DOMAIN-SUFFIX,discord.com,🚀 节点选择
- - DOMAIN-SUFFIX,discord.gg,🚀 节点选择
- - DOMAIN-SUFFIX,discord.media,🚀 节点选择
- - DOMAIN-SUFFIX,discordapp.com,🚀 节点选择
- - DOMAIN-SUFFIX,discordapp.net,🚀 节点选择
- - DOMAIN-SUFFIX,facebook.com,🚀 节点选择
- - DOMAIN-SUFFIX,fb.com,🚀 节点选择
- - DOMAIN-SUFFIX,fb.me,🚀 节点选择
- - DOMAIN-SUFFIX,fbcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,fbcdn.net,🚀 节点选择
- - IP-CIDR,31.13.24.0/21,🚀 节点选择,no-resolve
- - IP-CIDR,31.13.64.0/18,🚀 节点选择,no-resolve
- - IP-CIDR,45.64.40.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,66.220.144.0/20,🚀 节点选择,no-resolve
- - IP-CIDR,69.63.176.0/20,🚀 节点选择,no-resolve
- - IP-CIDR,69.171.224.0/19,🚀 节点选择,no-resolve
- - IP-CIDR,74.119.76.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,103.4.96.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,129.134.0.0/17,🚀 节点选择,no-resolve
- - IP-CIDR,157.240.0.0/17,🚀 节点选择,no-resolve
- - IP-CIDR,173.252.64.0/18,🚀 节点选择,no-resolve
- - IP-CIDR,179.60.192.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,185.60.216.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,204.15.20.0/22,🚀 节点选择,no-resolve
- - DOMAIN-SUFFIX,github.com,🚀 节点选择
- - DOMAIN-SUFFIX,github.io,🚀 节点选择
- - DOMAIN-SUFFIX,githubapp.com,🚀 节点选择
- - DOMAIN-SUFFIX,githubassets.com,🚀 节点选择
- - DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择
- - DOMAIN-SUFFIX,1e100.net,🚀 节点选择
- - DOMAIN-SUFFIX,2mdn.net,🚀 节点选择
- - DOMAIN-SUFFIX,app-measurement.net,🚀 节点选择
- - DOMAIN-SUFFIX,g.co,🚀 节点选择
- - DOMAIN-SUFFIX,ggpht.com,🚀 节点选择
- - DOMAIN-SUFFIX,goo.gl,🚀 节点选择
- - DOMAIN-SUFFIX,googleapis.cn,🚀 节点选择
- - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
- - DOMAIN-SUFFIX,gstatic.cn,🚀 节点选择
- - DOMAIN-SUFFIX,gstatic.com,🚀 节点选择
- - DOMAIN-SUFFIX,gvt0.com,🚀 节点选择
- - DOMAIN-SUFFIX,gvt1.com,🚀 节点选择
- - DOMAIN-SUFFIX,gvt2.com,🚀 节点选择
- - DOMAIN-SUFFIX,gvt3.com,🚀 节点选择
- - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🚀 节点选择
- - DOMAIN-SUFFIX,youtu.be,🚀 节点选择
- - DOMAIN-SUFFIX,youtube-nocookie.com,🚀 节点选择
- - DOMAIN-SUFFIX,youtube.com,🚀 节点选择
- - DOMAIN-SUFFIX,yt.be,🚀 节点选择
- - DOMAIN-SUFFIX,ytimg.com,🚀 节点选择
- - IP-CIDR,74.125.0.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,173.194.0.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,120.232.181.162/32,🚀 节点选择,no-resolve
- - IP-CIDR,120.241.147.226/32,🚀 节点选择,no-resolve
- - IP-CIDR,120.253.253.226/32,🚀 节点选择,no-resolve
- - IP-CIDR,120.253.255.162/32,🚀 节点选择,no-resolve
- - IP-CIDR,120.253.255.34/32,🚀 节点选择,no-resolve
- - IP-CIDR,120.253.255.98/32,🚀 节点选择,no-resolve
- - IP-CIDR,180.163.150.162/32,🚀 节点选择,no-resolve
- - IP-CIDR,180.163.150.34/32,🚀 节点选择,no-resolve
- - IP-CIDR,180.163.151.162/32,🚀 节点选择,no-resolve
- - IP-CIDR,180.163.151.34/32,🚀 节点选择,no-resolve
- - IP-CIDR,203.208.39.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,203.208.40.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,203.208.41.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,203.208.43.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,203.208.50.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,220.181.174.162/32,🚀 节点选择,no-resolve
- - IP-CIDR,220.181.174.226/32,🚀 节点选择,no-resolve
- - IP-CIDR,220.181.174.34/32,🚀 节点选择,no-resolve
- - DOMAIN-SUFFIX,cdninstagram.com,🚀 节点选择
- - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
- - DOMAIN-SUFFIX,instagr.am,🚀 节点选择
- - DOMAIN-SUFFIX,kakao.com,🚀 节点选择
- - DOMAIN-SUFFIX,kakao.co.kr,🚀 节点选择
- - DOMAIN-SUFFIX,kakaocdn.net,🚀 节点选择
- - IP-CIDR,1.201.0.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,27.0.236.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,103.27.148.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,103.246.56.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,110.76.140.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,113.61.104.0/22,🚀 节点选择,no-resolve
- - DOMAIN-SUFFIX,lin.ee,🚀 节点选择
- - DOMAIN-SUFFIX,line-apps.com,🚀 节点选择
- - DOMAIN-SUFFIX,line-cdn.net,🚀 节点选择
- - DOMAIN-SUFFIX,line-scdn.net,🚀 节点选择
- - DOMAIN-SUFFIX,line.me,🚀 节点选择
- - DOMAIN-SUFFIX,line.naver.jp,🚀 节点选择
- - DOMAIN-SUFFIX,nhncorp.jp,🚀 节点选择
- - IP-CIDR,103.2.28.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,103.2.30.0/23,🚀 节点选择,no-resolve
- - IP-CIDR,119.235.224.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,119.235.232.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,119.235.235.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,119.235.236.0/23,🚀 节点选择,no-resolve
- - IP-CIDR,147.92.128.0/17,🚀 节点选择,no-resolve
- - IP-CIDR,203.104.128.0/19,🚀 节点选择,no-resolve
- - DOMAIN-KEYWORD,1drv,🚀 节点选择
- - DOMAIN-KEYWORD,onedrive,🚀 节点选择
- - DOMAIN-KEYWORD,skydrive,🚀 节点选择
- - DOMAIN-SUFFIX,livefilestore.com,🚀 节点选择
- - DOMAIN-SUFFIX,oneclient.sfx.ms,🚀 节点选择
- - DOMAIN-SUFFIX,onedrive.com,🚀 节点选择
- - DOMAIN-SUFFIX,onedrive.live.com,🚀 节点选择
- - DOMAIN-SUFFIX,photos.live.com,🚀 节点选择
- - DOMAIN-SUFFIX,skydrive.wns.windows.com,🚀 节点选择
- - DOMAIN-SUFFIX,spoprod-a.akamaihd.net,🚀 节点选择
- - DOMAIN-SUFFIX,storage.live.com,🚀 节点选择
- - DOMAIN-SUFFIX,storage.msn.com,🚀 节点选择
- - DOMAIN-KEYWORD,porn,🚀 节点选择
- - DOMAIN-SUFFIX,8teenxxx.com,🚀 节点选择
- - DOMAIN-SUFFIX,ahcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,bcvcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,bongacams.com,🚀 节点选择
- - DOMAIN-SUFFIX,chaturbate.com,🚀 节点选择
- - DOMAIN-SUFFIX,dditscdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,livejasmin.com,🚀 节点选择
- - DOMAIN-SUFFIX,phncdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,phprcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,pornhub.com,🚀 节点选择
- - DOMAIN-SUFFIX,pornhubpremium.com,🚀 节点选择
- - DOMAIN-SUFFIX,rdtcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,redtube.com,🚀 节点选择
- - DOMAIN-SUFFIX,sb-cd.com,🚀 节点选择
- - DOMAIN-SUFFIX,spankbang.com,🚀 节点选择
- - DOMAIN-SUFFIX,t66y.com,🚀 节点选择
- - DOMAIN-SUFFIX,xhamster.com,🚀 节点选择
- - DOMAIN-SUFFIX,xnxx-cdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,xnxx.com,🚀 节点选择
- - DOMAIN-SUFFIX,xvideos-cdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,xvideos.com,🚀 节点选择
- - DOMAIN-SUFFIX,ypncdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,pixiv.net,🚀 节点选择
- - DOMAIN-SUFFIX,pximg.net,🚀 节点选择
- - DOMAIN-SUFFIX,amplitude.com,🚀 节点选择
- - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
- - DOMAIN-SUFFIX,hockeyapp.net,🚀 节点选择
- - DOMAIN-SUFFIX,readdle.com,🚀 节点选择
- - DOMAIN-SUFFIX,smartmailcloud.com,🚀 节点选择
- - DOMAIN-SUFFIX,fanatical.com,🚀 节点选择
- - DOMAIN-SUFFIX,humblebundle.com,🚀 节点选择
- - DOMAIN-SUFFIX,underlords.com,🚀 节点选择
- - DOMAIN-SUFFIX,valvesoftware.com,🚀 节点选择
- - DOMAIN-SUFFIX,playartifact.com,🚀 节点选择
- - DOMAIN-SUFFIX,steam-chat.com,🚀 节点选择
- - DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
- - DOMAIN-SUFFIX,steamgames.com,🚀 节点选择
- - DOMAIN-SUFFIX,steampowered.com,🚀 节点选择
- - DOMAIN-SUFFIX,steamstatic.com,🚀 节点选择
- - DOMAIN-SUFFIX,steamstat.us,🚀 节点选择
- - DOMAIN,steambroadcast.akamaized.net,🚀 节点选择
- - DOMAIN,steamcdn-a.akamaihd.net,🚀 节点选择
- - DOMAIN,steamcommunity-a.akamaihd.net,🚀 节点选择
- - DOMAIN,steamstore-a.akamaihd.net,🚀 节点选择
- - DOMAIN,steamusercontent-a.akamaihd.net,🚀 节点选择
- - DOMAIN,steamuserimages-a.akamaihd.net,🚀 节点选择
- - DOMAIN,steampipe.akamaized.net,🚀 节点选择
- - DOMAIN-SUFFIX,tap.io,🚀 节点选择
- - DOMAIN-SUFFIX,taptap.tw,🚀 节点选择
- - DOMAIN-SUFFIX,twitch.tv,🚀 节点选择
- - DOMAIN-SUFFIX,ttvnw.net,🚀 节点选择
- - DOMAIN-SUFFIX,jtvnw.net,🚀 节点选择
- - DOMAIN-KEYWORD,ttvnw,🚀 节点选择
- - DOMAIN-SUFFIX,t.co,🚀 节点选择
- - DOMAIN-SUFFIX,twimg.co,🚀 节点选择
- - DOMAIN-SUFFIX,twimg.com,🚀 节点选择
- - DOMAIN-SUFFIX,twimg.org,🚀 节点选择
- - DOMAIN-SUFFIX,t.me,🚀 节点选择
- - DOMAIN-SUFFIX,tdesktop.com,🚀 节点选择
- - DOMAIN-SUFFIX,telegra.ph,🚀 节点选择
- - DOMAIN-SUFFIX,telegram.me,🚀 节点选择
- - DOMAIN-SUFFIX,telegram.org,🚀 节点选择
- - DOMAIN-SUFFIX,telesco.pe,🚀 节点选择
- - IP-CIDR,91.108.0.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,109.239.140.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,149.154.160.0/20,🚀 节点选择,no-resolve
- - IP-CIDR6,2001:67c:4e8::/48,🚀 节点选择,no-resolve
- - IP-CIDR6,2001:b28:f23d::/48,🚀 节点选择,no-resolve
- - IP-CIDR6,2001:b28:f23f::/48,🚀 节点选择,no-resolve
- - DOMAIN-SUFFIX,terabox.com,🚀 节点选择
- - DOMAIN-SUFFIX,teraboxcdn.com,🚀 节点选择
- - IP-CIDR,18.194.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,34.224.0.0/12,🚀 节点选择,no-resolve
- - IP-CIDR,54.242.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,50.22.198.204/30,🚀 节点选择,no-resolve
- - IP-CIDR,208.43.122.128/27,🚀 节点选择,no-resolve
- - IP-CIDR,108.168.174.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,173.192.231.32/27,🚀 节点选择,no-resolve
- - IP-CIDR,158.85.5.192/27,🚀 节点选择,no-resolve
- - IP-CIDR,174.37.243.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,158.85.46.128/27,🚀 节点选择,no-resolve
- - IP-CIDR,173.192.222.160/27,🚀 节点选择,no-resolve
- - IP-CIDR,184.173.128.0/17,🚀 节点选择,no-resolve
- - IP-CIDR,158.85.224.160/27,🚀 节点选择,no-resolve
- - IP-CIDR,75.126.150.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,69.171.235.0/16,🚀 节点选择,no-resolve
- - DOMAIN-SUFFIX,mediawiki.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikibooks.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikidata.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikileaks.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikimedia.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikinews.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikipedia.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikiquote.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikisource.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikiversity.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikivoyage.org,🚀 节点选择
- - DOMAIN-SUFFIX,wiktionary.org,🚀 节点选择
- - DOMAIN-SUFFIX,neulion.com,🚀 节点选择
- - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
- - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
- - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
+ - DOMAIN-SUFFIX,1password.com,🚀 手动切换
+ - DOMAIN-SUFFIX,adguard.org,🚀 手动切换
+ - DOMAIN-SUFFIX,bit.no.com,🚀 手动切换
+ - DOMAIN-SUFFIX,btlibrary.me,🚀 手动切换
+ - DOMAIN-SUFFIX,cccat.io,🚀 手动切换
+ - DOMAIN-SUFFIX,cloudcone.com,🚀 手动切换
+ - DOMAIN-SUFFIX,dubox.com,🚀 手动切换
+ - DOMAIN-SUFFIX,gameloft.com,🚀 手动切换
+ - DOMAIN-SUFFIX,garena.com,🚀 手动切换
+ - DOMAIN-SUFFIX,hoyolab.com,🚀 手动切换
+ - DOMAIN-SUFFIX,inoreader.com,🚀 手动切换
+ - DOMAIN-SUFFIX,ip138.com,🚀 手动切换
+ - DOMAIN-SUFFIX,ping.pe,🚀 手动切换
+ - DOMAIN-SUFFIX,reddit.com,🚀 手动切换
+ - DOMAIN-SUFFIX,teddysun.com,🚀 手动切换
+ - DOMAIN-SUFFIX,tumbex.com,🚀 手动切换
+ - DOMAIN-SUFFIX,twdvd.com,🚀 手动切换
+ - DOMAIN-SUFFIX,unsplash.com,🚀 手动切换
+ - DOMAIN-SUFFIX,xn--i2ru8q2qg.com,🚀 手动切换
+ - DOMAIN-SUFFIX,yunpanjingling.com,🚀 手动切换
+ - DOMAIN-SUFFIX,eu,🚀 手动切换
+ - DOMAIN-SUFFIX,hk,🚀 手动切换
+ - DOMAIN-SUFFIX,jp,🚀 手动切换
+ - DOMAIN-SUFFIX,kr,🚀 手动切换
+ - DOMAIN-SUFFIX,sg,🚀 手动切换
+ - DOMAIN-SUFFIX,tw,🚀 手动切换
+ - DOMAIN-SUFFIX,uk,🚀 手动切换
+ - DOMAIN-SUFFIX,us,🚀 手动切换
+ - DOMAIN-KEYWORD,1e100,🚀 手动切换
+ - DOMAIN-KEYWORD,abema,🚀 手动切换
+ - DOMAIN-KEYWORD,appledaily,🚀 手动切换
+ - DOMAIN-KEYWORD,avtb,🚀 手动切换
+ - DOMAIN-KEYWORD,beetalk,🚀 手动切换
+ - DOMAIN-KEYWORD,blogspot,🚀 手动切换
+ - DOMAIN-KEYWORD,dropbox,🚀 手动切换
+ - DOMAIN-KEYWORD,facebook,🚀 手动切换
+ - DOMAIN-KEYWORD,fbcdn,🚀 手动切换
+ - DOMAIN-KEYWORD,github,🚀 手动切换
+ - DOMAIN-KEYWORD,gmail,🚀 手动切换
+ - DOMAIN-KEYWORD,google,🚀 手动切换
+ - DOMAIN-KEYWORD,instagram,🚀 手动切换
+ - DOMAIN-KEYWORD,porn,🚀 手动切换
+ - DOMAIN-KEYWORD,sci-hub,🚀 手动切换
+ - DOMAIN-KEYWORD,spotify,🚀 手动切换
+ - DOMAIN-KEYWORD,telegram,🚀 手动切换
+ - DOMAIN-KEYWORD,twitter,🚀 手动切换
+ - DOMAIN-KEYWORD,whatsapp,🚀 手动切换
+ - DOMAIN-KEYWORD,youtube,🚀 手动切换
+ - DOMAIN-SUFFIX,4sqi.net,🚀 手动切换
+ - DOMAIN-SUFFIX,a248.e.akamai.net,🚀 手动切换
+ - DOMAIN-SUFFIX,adobedtm.com,🚀 手动切换
+ - DOMAIN-SUFFIX,ampproject.org,🚀 手动切换
+ - DOMAIN-SUFFIX,android.com,🚀 手动切换
+ - DOMAIN-SUFFIX,aolcdn.com,🚀 手动切换
+ - DOMAIN-SUFFIX,apkmirror.com,🚀 手动切换
+ - DOMAIN-SUFFIX,apkpure.com,🚀 手动切换
+ - DOMAIN-SUFFIX,app-measurement.com,🚀 手动切换
+ - DOMAIN-SUFFIX,appspot.com,🚀 手动切换
+ - DOMAIN-SUFFIX,archive.org,🚀 手动切换
+ - DOMAIN-SUFFIX,armorgames.com,🚀 手动切换
+ - DOMAIN-SUFFIX,aspnetcdn.com,🚀 手动切换
+ - DOMAIN-SUFFIX,awsstatic.com,🚀 手动切换
+ - DOMAIN-SUFFIX,azureedge.net,🚀 手动切换
+ - DOMAIN-SUFFIX,azurewebsites.net,🚀 手动切换
+ - DOMAIN-SUFFIX,bandwagonhost.com,🚀 手动切换
+ - DOMAIN-SUFFIX,bing.com,🚀 手动切换
+ - DOMAIN-SUFFIX,bkrtx.com,🚀 手动切换
+ - DOMAIN-SUFFIX,blogcdn.com,🚀 手动切换
+ - DOMAIN-SUFFIX,blogger.com,🚀 手动切换
+ - DOMAIN-SUFFIX,blogsmithmedia.com,🚀 手动切换
+ - DOMAIN-SUFFIX,blogspot.com,🚀 手动切换
+ - DOMAIN-SUFFIX,blogspot.hk,🚀 手动切换
+ - DOMAIN-SUFFIX,blogspot.jp,🚀 手动切换
+ - DOMAIN-SUFFIX,bloomberg.cn,🚀 手动切换
+ - DOMAIN-SUFFIX,bloomberg.com,🚀 手动切换
+ - DOMAIN-SUFFIX,box.com,🚀 手动切换
+ - DOMAIN-SUFFIX,cachefly.net,🚀 手动切换
+ - DOMAIN-SUFFIX,cdnst.net,🚀 手动切换
+ - DOMAIN-SUFFIX,cloudfront.net,🚀 手动切换
+ - DOMAIN-SUFFIX,comodoca.com,🚀 手动切换
+ - DOMAIN-SUFFIX,daum.net,🚀 手动切换
+ - DOMAIN-SUFFIX,demdex.net,🚀 手动切换
+ - DOMAIN-SUFFIX,deskconnect.com,🚀 手动切换
+ - DOMAIN-SUFFIX,disqus.com,🚀 手动切换
+ - DOMAIN-SUFFIX,disquscdn.com,🚀 手动切换
+ - DOMAIN-SUFFIX,dropbox.com,🚀 手动切换
+ - DOMAIN-SUFFIX,dropboxapi.com,🚀 手动切换
+ - DOMAIN-SUFFIX,dropboxstatic.com,🚀 手动切换
+ - DOMAIN-SUFFIX,dropboxusercontent.com,🚀 手动切换
+ - DOMAIN-SUFFIX,duckduckgo.com,🚀 手动切换
+ - DOMAIN-SUFFIX,edgecastcdn.net,🚀 手动切换
+ - DOMAIN-SUFFIX,edgekey.net,🚀 手动切换
+ - DOMAIN-SUFFIX,edgesuite.net,🚀 手动切换
+ - DOMAIN-SUFFIX,eurekavpt.com,🚀 手动切换
+ - DOMAIN-SUFFIX,fastmail.com,🚀 手动切换
+ - DOMAIN-SUFFIX,firebaseio.com,🚀 手动切换
+ - DOMAIN-SUFFIX,flickr.com,🚀 手动切换
+ - DOMAIN-SUFFIX,flipboard.com,🚀 手动切换
+ - DOMAIN-SUFFIX,gfx.ms,🚀 手动切换
+ - DOMAIN-SUFFIX,gongm.in,🚀 手动切换
+ - DOMAIN-SUFFIX,hulu.com,🚀 手动切换
+ - DOMAIN-SUFFIX,id.heroku.com,🚀 手动切换
+ - DOMAIN-SUFFIX,io.io,🚀 手动切换
+ - DOMAIN-SUFFIX,issuu.com,🚀 手动切换
+ - DOMAIN-SUFFIX,ixquick.com,🚀 手动切换
+ - DOMAIN-SUFFIX,jtvnw.net,🚀 手动切换
+ - DOMAIN-SUFFIX,kat.cr,🚀 手动切换
+ - DOMAIN-SUFFIX,kik.com,🚀 手动切换
+ - DOMAIN-SUFFIX,kobo.com,🚀 手动切换
+ - DOMAIN-SUFFIX,kobobooks.com,🚀 手动切换
+ - DOMAIN-SUFFIX,licdn.com,🚀 手动切换
+ - DOMAIN-SUFFIX,live.net,🚀 手动切换
+ - DOMAIN-SUFFIX,livefilestore.com,🚀 手动切换
+ - DOMAIN-SUFFIX,llnwd.net,🚀 手动切换
+ - DOMAIN-SUFFIX,macrumors.com,🚀 手动切换
+ - DOMAIN-SUFFIX,medium.com,🚀 手动切换
+ - DOMAIN-SUFFIX,mega.nz,🚀 手动切换
+ - DOMAIN-SUFFIX,megaupload.com,🚀 手动切换
+ - DOMAIN-SUFFIX,messenger.com,🚀 手动切换
+ - DOMAIN-SUFFIX,netdna-cdn.com,🚀 手动切换
+ - DOMAIN-SUFFIX,nintendo.net,🚀 手动切换
+ - DOMAIN-SUFFIX,nsstatic.net,🚀 手动切换
+ - DOMAIN-SUFFIX,nytstyle.com,🚀 手动切换
+ - DOMAIN-SUFFIX,overcast.fm,🚀 手动切换
+ - DOMAIN-SUFFIX,openvpn.net,🚀 手动切换
+ - DOMAIN-SUFFIX,periscope.tv,🚀 手动切换
+ - DOMAIN-SUFFIX,pinimg.com,🚀 手动切换
+ - DOMAIN-SUFFIX,pinterest.com,🚀 手动切换
+ - DOMAIN-SUFFIX,potato.im,🚀 手动切换
+ - DOMAIN-SUFFIX,prfct.co,🚀 手动切换
+ - DOMAIN-SUFFIX,pscp.tv,🚀 手动切换
+ - DOMAIN-SUFFIX,quora.com,🚀 手动切换
+ - DOMAIN-SUFFIX,resilio.com,🚀 手动切换
+ - DOMAIN-SUFFIX,sfx.ms,🚀 手动切换
+ - DOMAIN-SUFFIX,shadowsocks.org,🚀 手动切换
+ - DOMAIN-SUFFIX,slack-edge.com,🚀 手动切换
+ - DOMAIN-SUFFIX,smartdnsproxy.com,🚀 手动切换
+ - DOMAIN-SUFFIX,sndcdn.com,🚀 手动切换
+ - DOMAIN-SUFFIX,soundcloud.com,🚀 手动切换
+ - DOMAIN-SUFFIX,startpage.com,🚀 手动切换
+ - DOMAIN-SUFFIX,staticflickr.com,🚀 手动切换
+ - DOMAIN-SUFFIX,symauth.com,🚀 手动切换
+ - DOMAIN-SUFFIX,symcb.com,🚀 手动切换
+ - DOMAIN-SUFFIX,symcd.com,🚀 手动切换
+ - DOMAIN-SUFFIX,textnow.com,🚀 手动切换
+ - DOMAIN-SUFFIX,textnow.me,🚀 手动切换
+ - DOMAIN-SUFFIX,thefacebook.com,🚀 手动切换
+ - DOMAIN-SUFFIX,thepiratebay.org,🚀 手动切换
+ - DOMAIN-SUFFIX,torproject.org,🚀 手动切换
+ - DOMAIN-SUFFIX,trustasiassl.com,🚀 手动切换
+ - DOMAIN-SUFFIX,tumblr.co,🚀 手动切换
+ - DOMAIN-SUFFIX,tumblr.com,🚀 手动切换
+ - DOMAIN-SUFFIX,tvb.com,🚀 手动切换
+ - DOMAIN-SUFFIX,txmblr.com,🚀 手动切换
+ - DOMAIN-SUFFIX,v2ex.com,🚀 手动切换
+ - DOMAIN-SUFFIX,vimeo.com,🚀 手动切换
+ - DOMAIN-SUFFIX,vine.co,🚀 手动切换
+ - DOMAIN-SUFFIX,vox-cdn.com,🚀 手动切换
+ - DOMAIN-SUFFIX,amazon.co.jp,🚀 手动切换
+ - DOMAIN-SUFFIX,amazon.com,🚀 手动切换
+ - DOMAIN-SUFFIX,amazonaws.com,🚀 手动切换
+ - IP-CIDR,13.32.0.0/15,🚀 手动切换,no-resolve
+ - IP-CIDR,13.35.0.0/17,🚀 手动切换,no-resolve
+ - IP-CIDR,18.184.0.0/15,🚀 手动切换,no-resolve
+ - IP-CIDR,18.194.0.0/15,🚀 手动切换,no-resolve
+ - IP-CIDR,18.208.0.0/13,🚀 手动切换,no-resolve
+ - IP-CIDR,18.232.0.0/14,🚀 手动切换,no-resolve
+ - IP-CIDR,52.58.0.0/15,🚀 手动切换,no-resolve
+ - IP-CIDR,52.74.0.0/16,🚀 手动切换,no-resolve
+ - IP-CIDR,52.77.0.0/16,🚀 手动切换,no-resolve
+ - IP-CIDR,52.84.0.0/15,🚀 手动切换,no-resolve
+ - IP-CIDR,52.200.0.0/13,🚀 手动切换,no-resolve
+ - IP-CIDR,54.93.0.0/16,🚀 手动切换,no-resolve
+ - IP-CIDR,54.156.0.0/14,🚀 手动切换,no-resolve
+ - IP-CIDR,54.226.0.0/15,🚀 手动切换,no-resolve
+ - IP-CIDR,54.230.156.0/22,🚀 手动切换,no-resolve
+ - DOMAIN-KEYWORD,uk-live,🚀 手动切换
+ - DOMAIN-SUFFIX,bbc.co,🚀 手动切换
+ - DOMAIN-SUFFIX,bbc.com,🚀 手动切换
+ - DOMAIN-SUFFIX,apache.org,🚀 手动切换
+ - DOMAIN-SUFFIX,docker.com,🚀 手动切换
+ - DOMAIN-SUFFIX,elastic.co,🚀 手动切换
+ - DOMAIN-SUFFIX,elastic.com,🚀 手动切换
+ - DOMAIN-SUFFIX,gcr.io,🚀 手动切换
+ - DOMAIN-SUFFIX,gitlab.com,🚀 手动切换
+ - DOMAIN-SUFFIX,gitlab.io,🚀 手动切换
+ - DOMAIN-SUFFIX,jitpack.io,🚀 手动切换
+ - DOMAIN-SUFFIX,maven.org,🚀 手动切换
+ - DOMAIN-SUFFIX,medium.com,🚀 手动切换
+ - DOMAIN-SUFFIX,mvnrepository.com,🚀 手动切换
+ - DOMAIN-SUFFIX,quay.io,🚀 手动切换
+ - DOMAIN-SUFFIX,reddit.com,🚀 手动切换
+ - DOMAIN-SUFFIX,redhat.com,🚀 手动切换
+ - DOMAIN-SUFFIX,sonatype.org,🚀 手动切换
+ - DOMAIN-SUFFIX,sourcegraph.com,🚀 手动切换
+ - DOMAIN-SUFFIX,spring.io,🚀 手动切换
+ - DOMAIN-SUFFIX,spring.net,🚀 手动切换
+ - DOMAIN-SUFFIX,stackoverflow.com,🚀 手动切换
+ - DOMAIN-SUFFIX,discord.co,🚀 手动切换
+ - DOMAIN-SUFFIX,discord.com,🚀 手动切换
+ - DOMAIN-SUFFIX,discord.gg,🚀 手动切换
+ - DOMAIN-SUFFIX,discord.media,🚀 手动切换
+ - DOMAIN-SUFFIX,discordapp.com,🚀 手动切换
+ - DOMAIN-SUFFIX,discordapp.net,🚀 手动切换
+ - DOMAIN-SUFFIX,facebook.com,🚀 手动切换
+ - DOMAIN-SUFFIX,fb.com,🚀 手动切换
+ - DOMAIN-SUFFIX,fb.me,🚀 手动切换
+ - DOMAIN-SUFFIX,fbcdn.com,🚀 手动切换
+ - DOMAIN-SUFFIX,fbcdn.net,🚀 手动切换
+ - IP-CIDR,31.13.24.0/21,🚀 手动切换,no-resolve
+ - IP-CIDR,31.13.64.0/18,🚀 手动切换,no-resolve
+ - IP-CIDR,45.64.40.0/22,🚀 手动切换,no-resolve
+ - IP-CIDR,66.220.144.0/20,🚀 手动切换,no-resolve
+ - IP-CIDR,69.63.176.0/20,🚀 手动切换,no-resolve
+ - IP-CIDR,69.171.224.0/19,🚀 手动切换,no-resolve
+ - IP-CIDR,74.119.76.0/22,🚀 手动切换,no-resolve
+ - IP-CIDR,103.4.96.0/22,🚀 手动切换,no-resolve
+ - IP-CIDR,129.134.0.0/17,🚀 手动切换,no-resolve
+ - IP-CIDR,157.240.0.0/17,🚀 手动切换,no-resolve
+ - IP-CIDR,173.252.64.0/18,🚀 手动切换,no-resolve
+ - IP-CIDR,179.60.192.0/22,🚀 手动切换,no-resolve
+ - IP-CIDR,185.60.216.0/22,🚀 手动切换,no-resolve
+ - IP-CIDR,204.15.20.0/22,🚀 手动切换,no-resolve
+ - DOMAIN-SUFFIX,github.com,🚀 手动切换
+ - DOMAIN-SUFFIX,github.io,🚀 手动切换
+ - DOMAIN-SUFFIX,githubapp.com,🚀 手动切换
+ - DOMAIN-SUFFIX,githubassets.com,🚀 手动切换
+ - DOMAIN-SUFFIX,githubusercontent.com,🚀 手动切换
+ - DOMAIN-SUFFIX,1e100.net,🚀 手动切换
+ - DOMAIN-SUFFIX,2mdn.net,🚀 手动切换
+ - DOMAIN-SUFFIX,app-measurement.net,🚀 手动切换
+ - DOMAIN-SUFFIX,g.co,🚀 手动切换
+ - DOMAIN-SUFFIX,ggpht.com,🚀 手动切换
+ - DOMAIN-SUFFIX,goo.gl,🚀 手动切换
+ - DOMAIN-SUFFIX,googleapis.cn,🚀 手动切换
+ - DOMAIN-SUFFIX,googleapis.com,🚀 手动切换
+ - DOMAIN-SUFFIX,gstatic.cn,🚀 手动切换
+ - DOMAIN-SUFFIX,gstatic.com,🚀 手动切换
+ - DOMAIN-SUFFIX,gvt0.com,🚀 手动切换
+ - DOMAIN-SUFFIX,gvt1.com,🚀 手动切换
+ - DOMAIN-SUFFIX,gvt2.com,🚀 手动切换
+ - DOMAIN-SUFFIX,gvt3.com,🚀 手动切换
+ - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🚀 手动切换
+ - DOMAIN-SUFFIX,youtu.be,🚀 手动切换
+ - DOMAIN-SUFFIX,youtube-nocookie.com,🚀 手动切换
+ - DOMAIN-SUFFIX,youtube.com,🚀 手动切换
+ - DOMAIN-SUFFIX,yt.be,🚀 手动切换
+ - DOMAIN-SUFFIX,ytimg.com,🚀 手动切换
+ - IP-CIDR,74.125.0.0/16,🚀 手动切换,no-resolve
+ - IP-CIDR,173.194.0.0/16,🚀 手动切换,no-resolve
+ - IP-CIDR,120.232.181.162/32,🚀 手动切换,no-resolve
+ - IP-CIDR,120.241.147.226/32,🚀 手动切换,no-resolve
+ - IP-CIDR,120.253.253.226/32,🚀 手动切换,no-resolve
+ - IP-CIDR,120.253.255.162/32,🚀 手动切换,no-resolve
+ - IP-CIDR,120.253.255.34/32,🚀 手动切换,no-resolve
+ - IP-CIDR,120.253.255.98/32,🚀 手动切换,no-resolve
+ - IP-CIDR,180.163.150.162/32,🚀 手动切换,no-resolve
+ - IP-CIDR,180.163.150.34/32,🚀 手动切换,no-resolve
+ - IP-CIDR,180.163.151.162/32,🚀 手动切换,no-resolve
+ - IP-CIDR,180.163.151.34/32,🚀 手动切换,no-resolve
+ - IP-CIDR,203.208.39.0/24,🚀 手动切换,no-resolve
+ - IP-CIDR,203.208.40.0/24,🚀 手动切换,no-resolve
+ - IP-CIDR,203.208.41.0/24,🚀 手动切换,no-resolve
+ - IP-CIDR,203.208.43.0/24,🚀 手动切换,no-resolve
+ - IP-CIDR,203.208.50.0/24,🚀 手动切换,no-resolve
+ - IP-CIDR,220.181.174.162/32,🚀 手动切换,no-resolve
+ - IP-CIDR,220.181.174.226/32,🚀 手动切换,no-resolve
+ - IP-CIDR,220.181.174.34/32,🚀 手动切换,no-resolve
+ - DOMAIN-SUFFIX,cdninstagram.com,🚀 手动切换
+ - DOMAIN-SUFFIX,instagram.com,🚀 手动切换
+ - DOMAIN-SUFFIX,instagr.am,🚀 手动切换
+ - DOMAIN-SUFFIX,kakao.com,🚀 手动切换
+ - DOMAIN-SUFFIX,kakao.co.kr,🚀 手动切换
+ - DOMAIN-SUFFIX,kakaocdn.net,🚀 手动切换
+ - IP-CIDR,1.201.0.0/24,🚀 手动切换,no-resolve
+ - IP-CIDR,27.0.236.0/22,🚀 手动切换,no-resolve
+ - IP-CIDR,103.27.148.0/22,🚀 手动切换,no-resolve
+ - IP-CIDR,103.246.56.0/22,🚀 手动切换,no-resolve
+ - IP-CIDR,110.76.140.0/22,🚀 手动切换,no-resolve
+ - IP-CIDR,113.61.104.0/22,🚀 手动切换,no-resolve
+ - DOMAIN-SUFFIX,lin.ee,🚀 手动切换
+ - DOMAIN-SUFFIX,line-apps.com,🚀 手动切换
+ - DOMAIN-SUFFIX,line-cdn.net,🚀 手动切换
+ - DOMAIN-SUFFIX,line-scdn.net,🚀 手动切换
+ - DOMAIN-SUFFIX,line.me,🚀 手动切换
+ - DOMAIN-SUFFIX,line.naver.jp,🚀 手动切换
+ - DOMAIN-SUFFIX,nhncorp.jp,🚀 手动切换
+ - IP-CIDR,103.2.28.0/24,🚀 手动切换,no-resolve
+ - IP-CIDR,103.2.30.0/23,🚀 手动切换,no-resolve
+ - IP-CIDR,119.235.224.0/24,🚀 手动切换,no-resolve
+ - IP-CIDR,119.235.232.0/24,🚀 手动切换,no-resolve
+ - IP-CIDR,119.235.235.0/24,🚀 手动切换,no-resolve
+ - IP-CIDR,119.235.236.0/23,🚀 手动切换,no-resolve
+ - IP-CIDR,147.92.128.0/17,🚀 手动切换,no-resolve
+ - IP-CIDR,203.104.128.0/19,🚀 手动切换,no-resolve
+ - DOMAIN-KEYWORD,1drv,🚀 手动切换
+ - DOMAIN-KEYWORD,onedrive,🚀 手动切换
+ - DOMAIN-KEYWORD,skydrive,🚀 手动切换
+ - DOMAIN-SUFFIX,livefilestore.com,🚀 手动切换
+ - DOMAIN-SUFFIX,oneclient.sfx.ms,🚀 手动切换
+ - DOMAIN-SUFFIX,onedrive.com,🚀 手动切换
+ - DOMAIN-SUFFIX,onedrive.live.com,🚀 手动切换
+ - DOMAIN-SUFFIX,photos.live.com,🚀 手动切换
+ - DOMAIN-SUFFIX,skydrive.wns.windows.com,🚀 手动切换
+ - DOMAIN-SUFFIX,spoprod-a.akamaihd.net,🚀 手动切换
+ - DOMAIN-SUFFIX,storage.live.com,🚀 手动切换
+ - DOMAIN-SUFFIX,storage.msn.com,🚀 手动切换
+ - DOMAIN-KEYWORD,porn,🚀 手动切换
+ - DOMAIN-SUFFIX,8teenxxx.com,🚀 手动切换
+ - DOMAIN-SUFFIX,ahcdn.com,🚀 手动切换
+ - DOMAIN-SUFFIX,bcvcdn.com,🚀 手动切换
+ - DOMAIN-SUFFIX,bongacams.com,🚀 手动切换
+ - DOMAIN-SUFFIX,chaturbate.com,🚀 手动切换
+ - DOMAIN-SUFFIX,dditscdn.com,🚀 手动切换
+ - DOMAIN-SUFFIX,livejasmin.com,🚀 手动切换
+ - DOMAIN-SUFFIX,phncdn.com,🚀 手动切换
+ - DOMAIN-SUFFIX,phprcdn.com,🚀 手动切换
+ - DOMAIN-SUFFIX,pornhub.com,🚀 手动切换
+ - DOMAIN-SUFFIX,pornhubpremium.com,🚀 手动切换
+ - DOMAIN-SUFFIX,rdtcdn.com,🚀 手动切换
+ - DOMAIN-SUFFIX,redtube.com,🚀 手动切换
+ - DOMAIN-SUFFIX,sb-cd.com,🚀 手动切换
+ - DOMAIN-SUFFIX,spankbang.com,🚀 手动切换
+ - DOMAIN-SUFFIX,t66y.com,🚀 手动切换
+ - DOMAIN-SUFFIX,xhamster.com,🚀 手动切换
+ - DOMAIN-SUFFIX,xnxx-cdn.com,🚀 手动切换
+ - DOMAIN-SUFFIX,xnxx.com,🚀 手动切换
+ - DOMAIN-SUFFIX,xvideos-cdn.com,🚀 手动切换
+ - DOMAIN-SUFFIX,xvideos.com,🚀 手动切换
+ - DOMAIN-SUFFIX,ypncdn.com,🚀 手动切换
+ - DOMAIN-SUFFIX,pixiv.net,🚀 手动切换
+ - DOMAIN-SUFFIX,pximg.net,🚀 手动切换
+ - DOMAIN-SUFFIX,amplitude.com,🚀 手动切换
+ - DOMAIN-SUFFIX,firebaseio.com,🚀 手动切换
+ - DOMAIN-SUFFIX,hockeyapp.net,🚀 手动切换
+ - DOMAIN-SUFFIX,readdle.com,🚀 手动切换
+ - DOMAIN-SUFFIX,smartmailcloud.com,🚀 手动切换
+ - DOMAIN-SUFFIX,fanatical.com,🚀 手动切换
+ - DOMAIN-SUFFIX,humblebundle.com,🚀 手动切换
+ - DOMAIN-SUFFIX,steamcommunity.com,🚀 手动切换
+ - DOMAIN-SUFFIX,tap.io,🚀 手动切换
+ - DOMAIN-SUFFIX,taptap.tw,🚀 手动切换
+ - DOMAIN-SUFFIX,twitch.tv,🚀 手动切换
+ - DOMAIN-SUFFIX,ttvnw.net,🚀 手动切换
+ - DOMAIN-SUFFIX,jtvnw.net,🚀 手动切换
+ - DOMAIN-KEYWORD,ttvnw,🚀 手动切换
+ - DOMAIN-SUFFIX,t.co,🚀 手动切换
+ - DOMAIN-SUFFIX,twimg.co,🚀 手动切换
+ - DOMAIN-SUFFIX,twimg.com,🚀 手动切换
+ - DOMAIN-SUFFIX,twimg.org,🚀 手动切换
+ - DOMAIN-SUFFIX,t.me,🚀 手动切换
+ - DOMAIN-SUFFIX,tdesktop.com,🚀 手动切换
+ - DOMAIN-SUFFIX,telegra.ph,🚀 手动切换
+ - DOMAIN-SUFFIX,telegram.me,🚀 手动切换
+ - DOMAIN-SUFFIX,telegram.org,🚀 手动切换
+ - DOMAIN-SUFFIX,telesco.pe,🚀 手动切换
+ - IP-CIDR,91.108.0.0/16,🚀 手动切换,no-resolve
+ - IP-CIDR,109.239.140.0/24,🚀 手动切换,no-resolve
+ - IP-CIDR,149.154.160.0/20,🚀 手动切换,no-resolve
+ - IP-CIDR6,2001:67c:4e8::/48,🚀 手动切换,no-resolve
+ - IP-CIDR6,2001:b28:f23d::/48,🚀 手动切换,no-resolve
+ - IP-CIDR6,2001:b28:f23f::/48,🚀 手动切换,no-resolve
+ - DOMAIN-SUFFIX,terabox.com,🚀 手动切换
+ - DOMAIN-SUFFIX,teraboxcdn.com,🚀 手动切换
+ - IP-CIDR,18.194.0.0/15,🚀 手动切换,no-resolve
+ - IP-CIDR,34.224.0.0/12,🚀 手动切换,no-resolve
+ - IP-CIDR,54.242.0.0/15,🚀 手动切换,no-resolve
+ - IP-CIDR,50.22.198.204/30,🚀 手动切换,no-resolve
+ - IP-CIDR,208.43.122.128/27,🚀 手动切换,no-resolve
+ - IP-CIDR,108.168.174.0/16,🚀 手动切换,no-resolve
+ - IP-CIDR,173.192.231.32/27,🚀 手动切换,no-resolve
+ - IP-CIDR,158.85.5.192/27,🚀 手动切换,no-resolve
+ - IP-CIDR,174.37.243.0/16,🚀 手动切换,no-resolve
+ - IP-CIDR,158.85.46.128/27,🚀 手动切换,no-resolve
+ - IP-CIDR,173.192.222.160/27,🚀 手动切换,no-resolve
+ - IP-CIDR,184.173.128.0/17,🚀 手动切换,no-resolve
+ - IP-CIDR,158.85.224.160/27,🚀 手动切换,no-resolve
+ - IP-CIDR,75.126.150.0/16,🚀 手动切换,no-resolve
+ - IP-CIDR,69.171.235.0/16,🚀 手动切换,no-resolve
+ - DOMAIN-SUFFIX,mediawiki.org,🚀 手动切换
+ - DOMAIN-SUFFIX,wikibooks.org,🚀 手动切换
+ - DOMAIN-SUFFIX,wikidata.org,🚀 手动切换
+ - DOMAIN-SUFFIX,wikileaks.org,🚀 手动切换
+ - DOMAIN-SUFFIX,wikimedia.org,🚀 手动切换
+ - DOMAIN-SUFFIX,wikinews.org,🚀 手动切换
+ - DOMAIN-SUFFIX,wikipedia.org,🚀 手动切换
+ - DOMAIN-SUFFIX,wikiquote.org,🚀 手动切换
+ - DOMAIN-SUFFIX,wikisource.org,🚀 手动切换
+ - DOMAIN-SUFFIX,wikiversity.org,🚀 手动切换
+ - DOMAIN-SUFFIX,wikivoyage.org,🚀 手动切换
+ - DOMAIN-SUFFIX,wiktionary.org,🚀 手动切换
+ - DOMAIN-SUFFIX,neulion.com,🚀 手动切换
+ - DOMAIN-SUFFIX,icntv.xyz,🚀 手动切换
+ - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 手动切换
+ - DOMAIN-SUFFIX,ocnttv.com,🚀 手动切换
+ - DOMAIN-SUFFIX,265.com,🚀 手动切换
+ - DOMAIN-SUFFIX,2mdn.net,🚀 手动切换
+ - DOMAIN-SUFFIX,alt1-mtalk.google.com,🚀 手动切换
+ - DOMAIN-SUFFIX,alt2-mtalk.google.com,🚀 手动切换
+ - DOMAIN-SUFFIX,alt3-mtalk.google.com,🚀 手动切换
+ - DOMAIN-SUFFIX,alt4-mtalk.google.com,🚀 手动切换
+ - DOMAIN-SUFFIX,alt5-mtalk.google.com,🚀 手动切换
+ - DOMAIN-SUFFIX,alt6-mtalk.google.com,🚀 手动切换
+ - DOMAIN-SUFFIX,alt7-mtalk.google.com,🚀 手动切换
+ - DOMAIN-SUFFIX,alt8-mtalk.google.com,🚀 手动切换
+ - DOMAIN-SUFFIX,app-measurement.com,🚀 手动切换
+ - DOMAIN-SUFFIX,c.android.clients.google.com,🚀 手动切换
+ - DOMAIN-SUFFIX,cache.pack.google.com,🚀 手动切换
+ - DOMAIN-SUFFIX,clickserve.dartsearch.net,🚀 手动切换
+ - DOMAIN-SUFFIX,clientservices.googleapis.com,🚀 手动切换
+ - DOMAIN-SUFFIX,crl.pki.goog,🚀 手动切换
+ - DOMAIN-SUFFIX,dl.google.com,🚀 手动切换
+ - DOMAIN-SUFFIX,dl.l.google.com,🚀 手动切换
+ - DOMAIN-SUFFIX,fonts.googleapis.com,🚀 手动切换
+ - DOMAIN-SUFFIX,fonts.gstatic.com,🚀 手动切换
+ - DOMAIN-SUFFIX,googletagmanager.com,🚀 手动切换
+ - DOMAIN-SUFFIX,googletagservices.com,🚀 手动切换
+ - DOMAIN-SUFFIX,gtm.oasisfeng.com,🚀 手动切换
+ - DOMAIN-SUFFIX,imasdk.googleapis.com,🚀 手动切换
+ - DOMAIN-SUFFIX,mtalk.google.com,🚀 手动切换
+ - DOMAIN-SUFFIX,ocsp.pki.goog,🚀 手动切换
+ - DOMAIN-SUFFIX,recaptcha.net,🚀 手动切换
+ - DOMAIN-SUFFIX,safebrowsing-cache.google.com,🚀 手动切换
+ - DOMAIN-SUFFIX,safebrowsing.googleapis.com,🚀 手动切换
+ - DOMAIN-SUFFIX,settings.crashlytics.com,🚀 手动切换
+ - DOMAIN-SUFFIX,ssl-google-analytics.l.google.com,🚀 手动切换
+ - DOMAIN-SUFFIX,ssl.gstatic.com,🚀 手动切换
+ - DOMAIN-SUFFIX,toolbarqueries.google.com,🚀 手动切换
+ - DOMAIN-SUFFIX,tools.google.com,🚀 手动切换
+ - DOMAIN-SUFFIX,tools.l.google.com,🚀 手动切换
+ - DOMAIN-SUFFIX,update.googleapis.com,🚀 手动切换
+ - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🚀 手动切换
+ - DOMAIN-SUFFIX,www.gstatic.com,🚀 手动切换
+ - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
+ - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
+ - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
+ - DOMAIN-SUFFIX,local,🎯 全球直连
+ - DOMAIN-SUFFIX,localhost,🎯 全球直连
+ - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
+ - IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
+ - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
+ - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
+ - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR6,::1/128,🎯 全球直连,no-resolve
+ - IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
+ - IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
+ - IP-CIDR6,fd00::/8,🎯 全球直连,no-resolve
+ - DOMAIN,instant.arubanetworks.com,🎯 全球直连
+ - DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
+ - DOMAIN,router.asus.com,🎯 全球直连
+ - DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
+ - DOMAIN-SUFFIX,leike.cc,🎯 全球直连
+ - DOMAIN-SUFFIX,miwifi.com,🎯 全球直连
+ - DOMAIN-SUFFIX,my.router,🎯 全球直连
+ - DOMAIN-SUFFIX,p.to,🎯 全球直连
+ - DOMAIN-SUFFIX,peiluyou.com,🎯 全球直连
+ - DOMAIN-SUFFIX,phicomm.me,🎯 全球直连
+ - DOMAIN-SUFFIX,router.ctc,🎯 全球直连
+ - DOMAIN-SUFFIX,routerlogin.com,🎯 全球直连
+ - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
+ - DOMAIN-SUFFIX,zte.home,🎯 全球直连
  - DOMAIN-SUFFIX,13th.tech,🎯 全球直连
  - DOMAIN-SUFFIX,423down.com,🎯 全球直连
  - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
@@ -4420,6 +3139,21 @@ rules:
  - DOMAIN-SUFFIX,zhimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,zhongsou.com,🎯 全球直连
  - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
+ - DOMAIN,csgo.wmsj.cn,🎯 全球直连
+ - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
+ - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
+ - DOMAIN,dota2.wmsj.cn,🎯 全球直连
+ - DOMAIN,st.dl.bscstorage.net,🎯 全球直连
+ - DOMAIN,st.dl.eccdnx.com,🎯 全球直连
+ - DOMAIN,st.dl.pinyuncloud.com,🎯 全球直连
+ - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 全球直连
+ - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
+ - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
+ - DOMAIN,wmsjsteam.com,🎯 全球直连
+ - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
+ - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
+ - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
+ - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
  - IP-CIDR,8.128.0.0/10,🎯 全球直连,no-resolve
  - IP-CIDR,8.208.0.0/12,🎯 全球直连,no-resolve
  - IP-CIDR,14.1.112.0/22,🎯 全球直连,no-resolve
@@ -4641,5 +3375,19 @@ rules:
  - IP-CIDR,101.198.128.0/18,🎯 全球直连,no-resolve
  - IP-CIDR,101.198.192.0/19,🎯 全球直连,no-resolve
  - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
+ - PROCESS-NAME,aria2c.exe,🎯 全球直连
+ - PROCESS-NAME,fdm.exe,🎯 全球直连
+ - PROCESS-NAME,Folx.exe,🎯 全球直连
+ - PROCESS-NAME,NetTransport.exe,🎯 全球直连
+ - PROCESS-NAME,Thunder.exe,🎯 全球直连
+ - PROCESS-NAME,Transmission.exe,🎯 全球直连
+ - PROCESS-NAME,uTorrent.exe,🎯 全球直连
+ - PROCESS-NAME,WebTorrent.exe,🎯 全球直连
+ - PROCESS-NAME,WebTorrent Helper.exe,🎯 全球直连
+ - DOMAIN-SUFFIX,smtp,🎯 全球直连
+ - DOMAIN-KEYWORD,aria2,🎯 全球直连
+ - PROCESS-NAME,DownloadService.exe,🎯 全球直连
+ - PROCESS-NAME,Weiyun.exe,🎯 全球直连
+ - PROCESS-NAME,baidunetdisk.exe,🎯 全球直连
  - GEOIP,CN,🎯 全球直连
  - MATCH,🐟 漏网之鱼
